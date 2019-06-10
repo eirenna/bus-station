@@ -1,0 +1,22 @@
+.ba-step {
+    width: 188px;
+    height: 188px;
+    background-color: $primary-color;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &:after {
+        content: attr(data-number);
+        font-size: 130px;
+        font-weight: 600;
+        color: #fff;
+        transform: translateX(25px);
+    }
+
+    &__text {
+        max-width: 80%;
+    }
+}
