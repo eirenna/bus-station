@@ -1,0 +1,10 @@
+.DS_Store
+package-lock.json
+node_modules
+npm-debug.log
+bower_components
+*.swp
+.cache
+.idea
+yarn.lock
+/dist

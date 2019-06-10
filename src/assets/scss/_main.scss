@@ -1,0 +1,10 @@
+a, button{
+    transition: .3s ease-in;
+    transition-property: color, background-color, opacity;
+    svg{
+        fill:currentColor;
+    }
+}
+button, .button{
+    cursor: pointer;
+}
