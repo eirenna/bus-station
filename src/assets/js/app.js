@@ -16,3 +16,21 @@ import './lib/foundation-explicit-pieces';
 import './lib/slick.min.js';
 
 $(document).foundation();
+
+
+let changeDirectionBtn = document.querySelector('.ba-direction-btn');
+
+function changeDirection() {
+    let from = document.querySelector('[name="from"]');
+    let fromVal = from.value;
+    let to = document.querySelector('[name="destination"]');
+    let toVal = to.value;
+    let btn = document.querySelector('.ba-direction-btn__img');
+
+    btn.classList.toggle('ba-rotate');
+    from.value = toVal;
+    to.value = fromVal;
+    
+}
+
+changeDirectionBtn.addEventListener('click', changeDirection);

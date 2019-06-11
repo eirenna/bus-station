@@ -1,22 +1,213 @@
-.ba-step {
-    width: 188px;
-    height: 188px;
-    background-color: $primary-color;
-    padding: 15px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    &:after {
-        content: attr(data-number);
-        font-size: 130px;
-        font-weight: 600;
-        color: #fff;
-        transform: translateX(25px);
+//Intro
+.ba-intro {
+    background: #567b8d url(../img/intro-bg.jpg) 50% / cover no-repeat;
+    padding: 50px 0;
+    @include breakpoint(large){
+        padding: 320px 0 91px;
     }
+}
 
-    &__text {
-        max-width: 80%;
+.ba-search {
+    max-width: 1122px;
+    background-color: rgba(30, 30, 30, 0.3);
+    padding: 39px 21px 50px;
+    @include breakpoint(medium){
+      padding: 25px 41px;
+    }    
+}
+
+.ba-search-form {    
+    @include breakpoint(medium){
+      display: flex;
     }
+    &__group {
+      @include breakpoint(medium){
+        flex-grow: 1;
+        display: flex;
+      }                
+    }
+    &__inner-group {
+      position: relative;
+      width: 100%;
+      margin-bottom: 22px;
+      display: flex;
+      border-right: 1px solid #605E5E;
+      @include breakpoint(medium){
+        width: 50%;
+        margin-bottom: 0;
+      }
+    }    
+    &__input {        
+        height: 52px;
+        border: none;
+        margin-bottom: 0;
+        padding: 9px 18px;
+        &::placeholder {
+            font: 300 16px/1.18 $header-font-family;
+            color: #605E5E;
+        }
+        &--data {
+            background: $white url(../img/calendar.svg) 95% 50% no-repeat;
+        }
+        &--spaced + &--spaced {
+          margin-left: 19px;
+          @include breakpoint(medium){
+            margin-left: 0;
+          }
+        }
+    }
+    &__input + &__input {
+        border-left: 1px solid #605E5E;
+    }
+}
+
+.ba-direction-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    transform: translate(-50%, -50%);
+    &__img {
+      transition: transform .4s ease;
+    }
+    
+}
+
+.ba-rotate {
+  transform: rotateZ(180deg);
+}
+
+.ba-button {
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    background-color: $primary-color;
+    color: $white;
+    text-transform: uppercase;
+    font: 400 18px/1.1 $header-font-family;
+    &:hover {
+      background-color: #00BFBF;
+    }
+    &:focus {
+      background-color: #00B3B3;
+    }
+    @include breakpoint(medium){
+      width: 157px;
+    }
+}
+
+.ba-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: $white url(../img/down-arrow.svg) 95% 50% no-repeat;
+  &:hover {
+    background-image: url(../img/down-arrow-hover.svg);
+  }
+}
+
+//Steps to online order
+.ba-section {
+  padding: 35px 0 50px;
+  @include breakpoint(medium) {
+    padding: 35px 0 113px;
+  }
+  &--about {
+    background-color: #567b8d;
+    padding-bottom: 10px;
+    padding-top: 27px;
+  }
+}
+
+.ba-section-title {
+  margin-bottom: 30px;
+  letter-spacing: $global-letter-spacing;
+  @include breakpoint(medium) {
+    margin-bottom: 60px;
+  }
+  &--about {
+    color: #f0f5f7;
+  }
+}
+.ba-step {
+  width: 188px;
+  height: 188px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  letter-spacing: $global-letter-spacing;
+  margin-bottom: 27px;
+  @include breakpoint(medium){
+    margin-bottom: 0;
+  }
+  &:after {
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    content: attr(data-number);
+    font-size: 130px;
+    font-weight: 600;
+    color: #fff;
+    transform: translateX(25px);
+  }
+
+  &__text {
+    margin-left: -7px;
+    max-width: 70%;
+    color: #595656;
+    line-height: 1.25;
+  }
+}
+
+//About us
+
+.ba-about-box {
+  max-width: 245px;
+  padding: 20px 0;
+  color: $white;
+  margin-bottom: 46px;
+  @include breakpoint(medium){
+    margin-bottom: 0;
+  }
+  &--bordered {
+    position: relative;
+    border-top: 2px solid #f0f5f7;
+    border-bottom: 2px solid #f0f5f7;
+    @include breakpoint(large) {
+      border: none;
+      &:before,
+      &:after {
+        content: "";
+        height: 78%;
+        width: 2px;
+        background-color: #f0f5f7;
+        position: absolute;
+        top: -20px;
+        left: -133px;
+      }
+      &:after {
+          left: auto;
+          right: -127px;
+      }
+    }
+  }
+  &__img {
+    min-height: 122px;
+    margin-bottom: 18px;
+  }
+  &__title {
+    font-weight: 600;
+    letter-spacing: $global-letter-spacing;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    line-height: 1.25;
+  }
 }

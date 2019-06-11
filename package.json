@@ -12,6 +12,7 @@
   "dependencies": {
     "foundation-sites": "^6.5.1",
     "jquery": "^3.2.1",
+    "js-datepicker": "^4.0.10",
     "motion-ui": "^2.0.3",
     "slick-carousel": "^1.8.1",
     "what-input": "^5.1.2"

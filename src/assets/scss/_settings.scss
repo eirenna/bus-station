@@ -79,11 +79,11 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #34404b;
-$white: #fefefe;
+$white: #ffffff;
 $body-background: #ffffff;
 $body-font-color: #193341;
 $body-font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$alternate-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$header-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -149,9 +149,9 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 52),
-    'h2': ('font-size': 36),
-    'h3': ('font-size': 28),
+    'h1': ('font-size': 32),
+    'h2': ('font-size': 18),
+    'h3': ('font-size': 25),
     'h4': ('font-size': 18),
     'h5': ('font-size': 16),
     'h6': ('font-size': 16),
@@ -197,6 +197,7 @@ $keystroke-background: $light-gray;
 $keystroke-padding: rem-calc(2 4 0);
 $keystroke-radius: $global-radius;
 $abbr-underline: 1px dotted $black;
+$global-letter-spacing: 0.05em;
 
 // 5. Typography Helpers
 // ---------------------
