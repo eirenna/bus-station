@@ -10,6 +10,7 @@
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "dependencies": {
+    "@chenfengyuan/datepicker": "^1.0.7",
     "foundation-sites": "^6.5.1",
     "jquery": "^3.2.1",
     "js-datepicker": "^4.0.10",

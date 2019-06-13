@@ -30,13 +30,15 @@
       position: relative;
       width: 100%;
       margin-bottom: 22px;
-      display: flex;
-      border-right: 1px solid #605E5E;
+      display: flex;      
       @include breakpoint(medium){
         width: 50%;
         margin-bottom: 0;
       }
-    }    
+    }  
+    &__inner-group + &__inner-group {
+      border-left: 1px solid #605E5E;
+    }  
     &__input {        
         height: 52px;
         border: none;
@@ -109,6 +111,72 @@
   }
 }
 
+.datepicker-container {
+  transform: translateY(-10px);
+}
+
+.datepicker-dropdown {
+  border: none;
+  box-shadow: none;
+}
+
+.datepicker-top-left::after, .datepicker-top-right::after,
+.datepicker-top-left::before, .datepicker-top-right::before {
+  display: none;
+}
+
+.datepicker-panel > ul[data-view="days"] > li,
+.datepicker-panel > ul[data-view="week"] > li {
+  background-color: #F0F5F7;
+}
+
+.datepicker-panel > ul[data-view="week"] > li,
+.datepicker-panel > ul[data-view="days"] > li {
+  font-family: Roboto;
+font-weight: 200;
+font-size: 16px;
+text-transform: lowercase;
+}
+
+.datepicker-panel > ul[data-view="days"] > li {
+font-weight: 300;
+}
+
+.datepicker-panel ul:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.datepicker-panel ul:first-child li { 
+  height: 35px;
+  line-height: 35px;
+  background-color: $body-font-color;
+  color: $white;
+  font-size: 18px;
+}
+
+.datepicker-panel > ul > li.picked,
+.datepicker-panel > ul > li.highlited {
+  color: #32EAE4;
+}
+
+.datepicker-panel > ul[data-view="days"] > li:hover {
+  background-color: rgba(0, 210, 210, 0.15);
+}
+
+// .datepicker-panel > ul > li[data-view="years prev"], .datepicker-panel > ul > li[data-view="year prev"], .datepicker-panel > ul > li[data-view="month prev"], .datepicker-panel > ul > li[data-view="years next"], .datepicker-panel > ul > li[data-view="year next"], .datepicker-panel > ul > li[data-view="month next"], .datepicker-panel > ul > li[data-view="next"] {
+//   height: 35px;
+//   color: $body-font-color;
+//   background: $body-font-color;
+//   &:before, &:after {
+//     content: '';
+//     width: 100%;
+//     height: 35px;
+//     background:  url(../img/down-arrow-hover.svg) 50% 50% no-repeat;
+//   }
+// }
+
+
 //Steps to online order
 .ba-section {
   padding: 35px 0 50px;
@@ -143,7 +211,7 @@
   position: relative;
   letter-spacing: $global-letter-spacing;
   margin-bottom: 27px;
-  @include breakpoint(medium){
+  @include breakpoint(large){
     margin-bottom: 0;
   }
   &:after {
@@ -158,7 +226,7 @@
   }
 
   &__text {
-    margin-left: -7px;
+    margin-left: -30px;
     max-width: 70%;
     color: #595656;
     line-height: 1.25;
@@ -179,7 +247,7 @@
     position: relative;
     border-top: 2px solid #f0f5f7;
     border-bottom: 2px solid #f0f5f7;
-    @include breakpoint(large) {
+    @include breakpoint(medium) {
       border: none;
       &:before,
       &:after {

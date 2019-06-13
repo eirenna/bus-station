@@ -15,6 +15,8 @@ import './lib/foundation-explicit-pieces';
 
 import './lib/slick.min.js';
 
+import datepicker from '@chenfengyuan/datepicker';
+
 $(document).foundation();
 
 
@@ -34,3 +36,16 @@ function changeDirection() {
 }
 
 changeDirectionBtn.addEventListener('click', changeDirection);
+
+$('[data-toggle="datepicker"]').datepicker({
+    format: 'dd.mm.YYYY',
+    days: ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', "П'ятниця", 'Субота'],
+    daysShort: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+    daysMin: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+    months: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'],
+    monthsShort: ['Січ', 'Лют', 'Бер', 'Кві', 'Тра', 'Чер', 'Лип', 'Сер', 'Вер', 'Жов', 'Лис', 'Гру'],
+    weekStart: 1,
+    startView: 0,
+    yearFirst: false,
+    yearSuffix: ''
+});
