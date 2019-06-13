@@ -1,182 +1,3 @@
-//Intro
-.ba-intro {
-    background: #567b8d url(../img/intro-bg.jpg) 50% / cover no-repeat;
-    padding: 50px 0;
-    @include breakpoint(large){
-        padding: 320px 0 91px;
-    }
-}
-
-.ba-search {
-    max-width: 1122px;
-    background-color: rgba(30, 30, 30, 0.3);
-    padding: 39px 21px 50px;
-    @include breakpoint(medium){
-      padding: 25px 41px;
-    }    
-}
-
-.ba-search-form {    
-    @include breakpoint(medium){
-      display: flex;
-    }
-    &__group {
-      @include breakpoint(medium){
-        flex-grow: 1;
-        display: flex;
-      }                
-    }
-    &__inner-group {
-      position: relative;
-      width: 100%;
-      margin-bottom: 22px;
-      display: flex;      
-      @include breakpoint(medium){
-        width: 50%;
-        margin-bottom: 0;
-      }
-    }  
-    &__inner-group + &__inner-group {
-      border-left: 1px solid #605E5E;
-    }  
-    &__input {        
-        height: 52px;
-        border: none;
-        margin-bottom: 0;
-        padding: 9px 18px;
-        &::placeholder {
-            font: 300 16px/1.18 $header-font-family;
-            color: #605E5E;
-        }
-        &--data {
-            background: $white url(../img/calendar.svg) 95% 50% no-repeat;
-        }
-        &--spaced + &--spaced {
-          margin-left: 19px;
-          @include breakpoint(medium){
-            margin-left: 0;
-          }
-        }
-    }
-    &__input + &__input {
-        border-left: 1px solid #605E5E;
-    }
-}
-
-.ba-direction-btn {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    transform: translate(-50%, -50%);
-    &__img {
-      transition: transform .4s ease;
-    }
-    
-}
-
-.ba-rotate {
-  transform: rotateZ(180deg);
-}
-
-.ba-button {
-    width: 100%;
-    height: 52px;
-    line-height: 52px;
-    text-align: center;
-    background-color: $primary-color;
-    color: $white;
-    text-transform: uppercase;
-    font: 400 18px/1.1 $header-font-family;
-    &:hover {
-      background-color: #00BFBF;
-    }
-    &:focus {
-      background-color: #00B3B3;
-    }
-    @include breakpoint(medium){
-      width: 157px;
-    }
-}
-
-.ba-select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background: $white url(../img/down-arrow.svg) 95% 50% no-repeat;
-  &:hover {
-    background-image: url(../img/down-arrow-hover.svg);
-  }
-}
-
-.datepicker-container {
-  transform: translateY(-10px);
-}
-
-.datepicker-dropdown {
-  border: none;
-  box-shadow: none;
-}
-
-.datepicker-top-left::after, .datepicker-top-right::after,
-.datepicker-top-left::before, .datepicker-top-right::before {
-  display: none;
-}
-
-.datepicker-panel > ul[data-view="days"] > li,
-.datepicker-panel > ul[data-view="week"] > li {
-  background-color: #F0F5F7;
-}
-
-.datepicker-panel > ul[data-view="week"] > li,
-.datepicker-panel > ul[data-view="days"] > li {
-  font-family: Roboto;
-font-weight: 200;
-font-size: 16px;
-text-transform: lowercase;
-}
-
-.datepicker-panel > ul[data-view="days"] > li {
-font-weight: 300;
-}
-
-.datepicker-panel ul:first-child {
-  display: flex;
-  align-items: center;
-}
-
-.datepicker-panel ul:first-child li { 
-  height: 35px;
-  line-height: 35px;
-  background-color: $body-font-color;
-  color: $white;
-  font-size: 18px;
-}
-
-.datepicker-panel > ul > li.picked,
-.datepicker-panel > ul > li.highlited {
-  color: #32EAE4;
-}
-
-.datepicker-panel > ul[data-view="days"] > li:hover {
-  background-color: rgba(0, 210, 210, 0.15);
-}
-
-// .datepicker-panel > ul > li[data-view="years prev"], .datepicker-panel > ul > li[data-view="year prev"], .datepicker-panel > ul > li[data-view="month prev"], .datepicker-panel > ul > li[data-view="years next"], .datepicker-panel > ul > li[data-view="year next"], .datepicker-panel > ul > li[data-view="month next"], .datepicker-panel > ul > li[data-view="next"] {
-//   height: 35px;
-//   color: $body-font-color;
-//   background: $body-font-color;
-//   &:before, &:after {
-//     content: '';
-//     width: 100%;
-//     height: 35px;
-//     background:  url(../img/down-arrow-hover.svg) 50% 50% no-repeat;
-//   }
-// }
-
-
 //Steps to online order
 .ba-section {
   padding: 35px 0 50px;
@@ -187,6 +8,10 @@ font-weight: 300;
     background-color: #567b8d;
     padding-bottom: 10px;
     padding-top: 27px;
+  }
+  &--partners {
+    background-color: #567b8d;
+    padding: 0;
   }
 }
 
@@ -257,11 +82,19 @@ font-weight: 300;
         background-color: #f0f5f7;
         position: absolute;
         top: -20px;
-        left: -133px;
+        left: -20%;
       }
       &:after {
           left: auto;
-          right: -127px;
+          right: -20%;
+      }
+    }
+    @include breakpoint(large) {
+      &:before {
+        left: -50%;
+      }
+      &:after {
+          right: -50%;
       }
     }
   }

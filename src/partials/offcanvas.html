@@ -1,7 +1,8 @@
 <nav>
     <ul class="menu vertical">
         <li {{#ifpage 'index'}}class="active"{{/ifpage}}>
-            <a href="index.html">Home</a>
+            <li {{#ifpage 'index'}}class="active"{{/ifpage}}><a href="index.html">Головна</a></li>
+            <li {{#ifpage 'directions'}}class="active"{{/ifpage}}><a href="directions.html">Напрямки</a></li>
         </li>
     </ul>
 </nav>

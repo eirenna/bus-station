@@ -1,0 +1,65 @@
+<section class="ba-intro">
+        <div class="row column">
+          <div class="ba-search align-right">
+            <form action="#" method="POST" class="ba-search-form">
+              <div class="ba-search-form__group">
+                <div class="ba-search-form__inner-group">
+                  <input
+                    type="text"
+                    name="from"
+                    class="ba-search-form__input"
+                    placeholder="Звідки"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="destination"
+                    class="ba-search-form__input"
+                    placeholder="Куди"
+                    required
+                  />
+                  <button class="ba-direction-btn">
+                      <img
+                        src="{{ root }}/assets/img/direction.jpg"
+                        alt=""
+                        class="ba-direction-btn__img"
+                      />
+                    </button>
+                    <!-- /.ba-direction-btn -->
+                </div>
+                <!-- /.ba-search-form__destination -->
+                <div class="ba-search-form__inner-group">
+                    <input data-toggle="datepicker" 
+                      class="ba-search-form__input ba-search-form__input--spaced ba-search-form__input--data"
+                      placeholder="Дата"
+                      name="date"
+                      required
+                    />
+                    <select
+                      name="places-quantity"
+                      class="ba-search-form__input ba-search-form__input--spaced ba-select"
+                    >
+                      <option value="" selected>К-сть місць</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>       
+                </div>
+                <!-- /.ba-search-form__inner-group -->   
+              </div>
+              <button type="submit" class="ba-button">ШУКАТИ</button>
+            </form>
+            <!-- /.ba-search-form -->
+          </div>
+          <!-- /.ba-search -->
+        </div>
+        <!-- /.row column -->
+      </section>
+      <!-- /.ba-intro -->
