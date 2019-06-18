@@ -1,0 +1,163 @@
+---
+title: Bus Station - Bus Schedule
+---
+
+{{>search}}
+<nav aria-label="Ви знаходитесь тут: " role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="#">Головна</a></li>
+    <li>
+      <span class="show-for-sr">Поточна сторінка: </span> Розклад автобусів
+    </li>
+  </ul>
+</nav>
+
+<div class="row column">
+  <h2 class="text-center">Розклад автобусів</h2>
+  <div class="ba-user-choise">
+    <div class="ba-user-choise__direction">
+      Полтава
+      <svg
+        width="70"
+        height="8"
+        viewBox="0 0 70 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M69.3536 4.35355C69.5488 4.15829 69.5488 3.84171 69.3536 3.64645L66.1716 0.464466C65.9763 0.269204 65.6597 0.269204 65.4645 0.464466C65.2692 0.659728 65.2692 0.976311 65.4645 1.17157L68.2929 4L65.4645 6.82843C65.2692 7.02369 65.2692 7.34027 65.4645 7.53553C65.6597 7.7308 65.9763 7.7308 66.1716 7.53553L69.3536 4.35355ZM0 4.5H69V3.5H0V4.5Z"
+          fill="#2C5A71"
+        />
+      </svg>
+      Київ
+    </div>
+    <!-- /.ba-user-choise__direction -->
+    <div class="ba-user-choise__date">Вт. 21.08</div>
+    <!-- /.ba-user-choise__date -->
+  </div>
+  <!-- /.ba-user-choise -->
+  <div class="row align-right">
+    <span class="ba-sort">Сортувати: за ціною</span>
+    <!-- /.ba-sort -->
+  </div>
+  <!-- /.row align-right -->
+  <script type="text/template" id="result">
+    <div class="ba-result-card">
+        <div class="ba-result-card__main">
+            <div class="row">
+                <div class="column small-12 large-3">
+                    <div class="ba-result-card__left text-center">
+                        <div class="ba-result-card__route-name">
+                          Харків
+                          <svg width="24" height="1" viewBox="0 0 24 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <line x1="4.37114e-08" y1="0.5" x2="24" y2="0.500002" stroke="#2C5A71"/>
+                              </svg>
+
+                          Київ
+                        </div>
+                        <!-- /.ba-result-card__route-name -->
+                        <div class="ba-result-card__race-number">
+                          Рейс 1369
+                        </div>
+                        <!-- /.ba-result-card__race-number -->
+                        <a href="#" class="ba-more-button">
+                          деталі
+                        </a> <!-- /.ba-button -->
+                    </div>
+                    <!-- /.ba-result-card__left -->
+                </div>
+                <!-- /.column small-12 large-3 -->
+                <div class="column small-12 large-9">
+                  <div class="ba-result-card__right">
+                      <div class="ba-result-card__top">
+                          <div class="ba-date text-center">
+                              <div class="ba-bold">08:20</div>
+                              <div>Вт. 21.08</div>
+                          </div>
+                          <!-- /.ba-date -->
+                          <div class="ba-departure text-center">
+                              <div class="ba-bold">Полтава</div>
+                              <div>від: Полтава АС-1</div>
+                          </div>
+                          <!-- /.ba-departure text-center -->
+                          <div class="ba-duration text-center">
+                              <div class="ba-duration__top">5 год 40 хв</div>
+                              <!-- /.ba-duration__top -->
+                              <div>у дорозі</div>
+                          </div>
+                          <!-- /.ba-duration -->
+                          <div class="ba-arrival text-center">
+                              <div class="ba-bold">Київ</div>
+                              <div>до: Київ АВ</div>
+                          </div>
+                          <!-- /.ba-arrival text-center -->
+                      </div>
+                      <!-- /.ba-result-card__top -->
+                      <div class="ba-result-card__bottom">
+                          <div>Вiльних місць: <span>10</span></div>
+                          <div>
+                              <span class="ba-price">150 грн</span> <!-- /.ba-price -->
+                              <a href="#" class="ba-button">ОБРАТИ</a> <!-- /.ba-button -->
+                          </div>
+                      </div>
+                      <!-- /.ba-result-card__bottom -->
+                  </div>
+                  <!-- /.ba-result-card__right -->
+                </div>
+                <!-- /.column small-12 medium-9 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.ba-resunt-card__main -->
+        <div class="ba-result-card__details">
+          <div class="ba-route">
+              <div class="ba-route__point">
+                  <div class="ba-route__time">08:20</div>
+                  <!-- /.ba-route__time -->
+                  <div class="ba-route__round"></div>
+                  <!-- /.ba-route__round -->
+                  <div class="ba-route__name">Полтава</div>
+                  <!-- /.ba-route__name -->
+              </div>
+              <!-- /.ba-route__point -->
+              <div class="ba-route__point">
+                  <div class="ba-route__time">08:20</div>
+                  <!-- /.ba-route__time -->
+                  <div class="ba-route__round ba-route__round--inactive"></div>
+                  <!-- /.ba-route__round -->
+                  <div class="ba-route__name">Полтава</div>
+                  <!-- /.ba-route__name -->
+              </div>
+              <!-- /.ba-route__point -->
+              <div class="ba-route__point">
+                  <div class="ba-route__time">08:20</div>
+                  <!-- /.ba-route__time -->
+                  <div class="ba-route__round ba-route__round--inactive"></div>
+                  <!-- /.ba-route__round -->
+                  <div class="ba-route__name">Полтава</div>
+                  <!-- /.ba-route__name -->
+              </div>
+              <!-- /.ba-route__point -->
+              <div class="ba-route__point">
+                  <div class="ba-route__time">08:20</div>
+                  <!-- /.ba-route__time -->
+                  <div class="ba-route__round"></div>
+                  <!-- /.ba-route__round -->
+                  <div class="ba-route__name">Полтава</div>
+                  <!-- /.ba-route__name -->
+              </div>
+              <!-- /.ba-route__point -->
+          </div>
+          <!-- /.ba-route -->
+          <div class="ba-result-card__bus-details">
+              <span>Перевізник: ПП “Антонець”</span>
+              <span>Модель автобусу: Неоплан</span>
+          </div>
+          <!-- /.ba-result-card__bus -->
+        </div>
+        <!-- /.ba-resul-card__details -->
+    </div>
+    <!-- /.ba-result-card -->
+  </script>
+</div>
+<!-- /.row column -->

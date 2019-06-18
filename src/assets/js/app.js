@@ -19,7 +19,7 @@ import datepicker from '@chenfengyuan/datepicker';
 
 $(document).foundation();
 
-
+//Change direction
 let changeDirectionBtn = document.querySelector('.ba-direction-btn');
 
 function changeDirection() {
@@ -35,7 +35,11 @@ function changeDirection() {
     
 }
 
+
+//Datepicker settings
 changeDirectionBtn.addEventListener('click', changeDirection);
+let today = new Date();
+
 
 $('[data-toggle="datepicker"]').datepicker({
     format: 'dd.mm.YYYY',
@@ -47,5 +51,44 @@ $('[data-toggle="datepicker"]').datepicker({
     weekStart: 1,
     startView: 0,
     yearFirst: false,
-    yearSuffix: ''
+    yearSuffix: '',
+    startDate: today
+});
+
+
+//Open and hide search result details
+let resultCard = $('.ba-result-card');
+
+
+resultCard.find('.ba-more-button').on('click', function(e){
+    e.preventDefault();
+    let chosenCard = $(this).closest(resultCard);
+    
+    
+    chosenCard.find('.ba-result-card__details').slideToggle();
+    chosenCard.find('.ba-result-card__main').toggleClass('ba-result-card__main--opened');
+    $(this).toggleClass('ba-more-button--opened');
+});
+
+//Search from json file
+let searchForm = document.querySelector('.ba-search-form');
+
+let citiesList = new XMLHttpRequest();
+
+citiesList.onload = function () {
+    // If bad request exit from function
+		if (citiesList.status !== 200) {
+			return;
+        }
+    //Make object from string
+    let citiesTotal = JSON.parse(citiesList.responseText);
+    console.log(citiesTotal);
+    
+}
+
+searchForm.addEventListener('submit', function (e) {
+    e.preventDefault();    
+
+	citiesList.open("GET", "../data/cities.json"); //Set AJAX request
+	citiesList.send(); //Send AJAX request
 });

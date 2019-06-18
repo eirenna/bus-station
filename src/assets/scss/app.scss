@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-@import 'settings';
+@import '_settings';
 @import 'foundation';
 // @import 'motion-ui';
 
@@ -25,7 +25,7 @@
 // @include foundation-table;
 // Basic components
 // @include foundation-badge;
-// @include foundation-breadcrumbs;
+@include foundation-breadcrumbs;
 // @include foundation-callout;
 // @include foundation-card;
 // @include foundation-dropdown;
@@ -72,3 +72,4 @@
 @import "components/datepicker";
 @import "components/search";
 @import "pages/front";
+@import "pages/bus-schedule";
