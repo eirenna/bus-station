@@ -8,9 +8,12 @@
     "cost": "210",
     "carrier": "ФОП Бринцов С.В.",
     "bus": "Van Hool 2(free)",
-    "city1": "Лубни АС",
-    "city2": "Пирятин АС-1",
-    "city3": "Бориспіль АЕ"
+    "city1": "Лубни",
+    "city2": "Пирятин",
+    "city3": "Бориспіль",
+    "station1": "Лубни АС",
+    "station2": "Пирятин АС-1",
+    "station3": "Бориспіль АЕ"
 },
 {
     "city": "Київ",
@@ -22,9 +25,12 @@
     "cost": "220",
     "carrier": "Gunsel TOV",
     "bus": "МЕРСЕДЕС",
-    "city1": "Хорол АС",
-    "city2": "Пирятин АС-1",
-    "city3": "Бориспіль АЕ"
+    "city1": "Хорол",
+    "city2": "Пирятин",
+    "city3": "Бориспіль",
+    "station1": "Хорол АС",
+    "station2": "Пирятин АС-1",
+    "station3": "Бориспіль АЕ"
 },
 {
     "city": "Київ",
@@ -36,9 +42,12 @@
     "cost": "289",
     "carrier": "ТОВ ЮНАС",
     "bus": "МЕРСЕДЕС (42)",
-    "city1": "Лубни АС",
-    "city2": "Пирятин АС-1",
-    "city3": "Бориспіль АЕ"
+    "city1": "Лубни",
+    "city2": "Пирятин",
+    "city3": "Бориспіль",
+    "station1": "Лубни АС",
+    "station2": "Пирятин АС-1",
+    "station3": "Бориспіль АЕ"
 },
 {
     "city": "Київ",
@@ -50,9 +59,12 @@
     "cost": "300",
     "carrier": "Тунч Мурат",
     "bus": "Mercedes Sprinter",
-    "city1": "Лубни АС",
-    "city2": "Пирятин АС-1",
-    "city3": "Бориспіль АЕ"
+    "city1": "Лубни",
+    "city2": "Пирятин",
+    "city3": "Бориспіль",
+    "station1": "Лубни АС",
+    "station2": "Пирятин АС-1",
+    "station3": "Бориспіль АЕ"
 },
 {
     "city": "Одеса",
@@ -64,9 +76,12 @@
     "cost": "550",
     "carrier": "Бринцов С.В.",
     "bus": "Setra S 315 НDH",
-    "city1": "Хорол АС",
-    "city2": "Пирятин АС-1",
-    "city3": "Умань"
+    "city1": "Хорол",
+    "city2": "Пирятин",
+    "city3": "Умань",
+    "station1": "Хорол АС",
+    "station2": "Пирятин АС-1",
+    "station3": "Умань AC"
 },
 {
     "city": "Одеса",
@@ -78,9 +93,12 @@
     "cost": "579",
     "carrier": "Рік Авто ТОВ",
     "bus": "King Long",
-    "city1": "Хорол АС",
-    "city2": "Пирятин АС-1",
-    "city3": "Умань"
+    "city1": "Хорол",
+    "city2": "Пирятин",
+    "city3": "Умань",
+    "station1": "Хорол АС",
+    "station2": "Пирятин АС-1",
+    "station3": "Умань AC"
 },
 {
     "city": "Одеса",
@@ -92,9 +110,12 @@
     "cost": "593",
     "carrier": "ФОП ШАБЛIЙ А.М.",
     "bus": "ВАН-ХОЛ (47)",
-    "city1": "Хорол АС",
-    "city2": "Пирятин АС-1",
-    "city3": "Умань"
+    "city1": "Хорол",
+    "city2": "Пирятин",
+    "city3": "Умань",
+    "station1": "Хорол АС",
+    "station2": "Пирятин АС-1",
+    "station3": "Умань AC"
 },
 {
     "city": "Одеса",
@@ -106,9 +127,12 @@
     "cost": "593",
     "carrier": "ТОВ ЛIНII ПОЛIССЯ",
     "bus": "ВАН-ХОЛ (47)",
-    "city1": "Хорол АС",
-    "city2": "Пирятин АС-1",
-    "city3": "Умань"
+    "city1": "Хорол",
+    "city2": "Пирятин",
+    "city3": "Умань",
+    "station1": "Хорол АС",
+    "station2": "Пирятин АС-1",
+    "station3": "Умань AC"
 },
 {
     "city": "Харків",
@@ -122,7 +146,10 @@
     "bus": "BOVA",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Харків",
@@ -136,7 +163,10 @@
     "bus": "Skania",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Харків",
@@ -150,7 +180,10 @@
     "bus": "Skania Higer A 80",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Харків",
@@ -164,7 +197,10 @@
     "bus": "Skania",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Суми",
@@ -178,7 +214,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Суми",
@@ -192,7 +231,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Суми",
@@ -206,7 +248,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Суми",
@@ -220,7 +265,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Кременчук",
@@ -234,7 +282,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Кременчук",
@@ -248,7 +299,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Кременчук",
@@ -262,7 +316,10 @@
     "bus": "King Long",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Кременчук",
@@ -276,7 +333,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Черкаси",
@@ -290,7 +350,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Черкаси",
@@ -304,7 +367,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Черкаси",
@@ -318,7 +384,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Черкаси",
@@ -332,7 +401,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Дніпро",
@@ -346,7 +418,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Дніпро",
@@ -360,7 +435,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Дніпро",
@@ -374,7 +452,10 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 },
 {
     "city": "Дніпро",
@@ -388,6 +469,9 @@
     "bus": "Mercedes",
     "city1": "",
     "city2": "",
-    "city3": ""
+    "city3": "",
+    "station1": "",
+    "station2": "",
+    "station3": ""
 }
 ]

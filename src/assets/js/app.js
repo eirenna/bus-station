@@ -32,7 +32,7 @@ function changeDirection() {
     btn.classList.toggle('ba-rotate');
     from.value = toVal;
     to.value = fromVal;
-    
+
 }
 
 
@@ -55,40 +55,119 @@ $('[data-toggle="datepicker"]').datepicker({
     startDate: today
 });
 
+let blogSlider = $('.ba-blog-slider');
 
-//Open and hide search result details
-let resultCard = $('.ba-result-card');
+blogSlider.slick({
+            slide: '.ba-post',
+            //autoplay: true,
+            dots: true,
+            nextArrow: blogSlider.find('[data-next]'),
+            prevArrow: blogSlider.find('[data-prev]'),
+            mobileFirst: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }
+                ]
+            });
 
 
-resultCard.find('.ba-more-button').on('click', function(e){
-    e.preventDefault();
-    let chosenCard = $(this).closest(resultCard);
-    
-    
-    chosenCard.find('.ba-result-card__details').slideToggle();
-    chosenCard.find('.ba-result-card__main').toggleClass('ba-result-card__main--opened');
-    $(this).toggleClass('ba-more-button--opened');
-});
+        ////Search from json file///////////////
+        let searchForm = document.querySelector('.ba-search-form');
+        let departureCity = searchForm.querySelector('[name="from"]');
+        let arrivalCity = searchForm.querySelector('[name="destination"]');
+        let date = searchForm.querySelector('[name="date"]');
+        let seatsQty = searchForm.querySelector('[name="seats-quantity"]');
 
-//Search from json file
-let searchForm = document.querySelector('.ba-search-form');
+        let pageName = location.pathname.substring(1);
 
-let citiesList = new XMLHttpRequest();
 
-citiesList.onload = function () {
-    // If bad request exit from function
-		if (citiesList.status !== 200) {
-			return;
+        let resultCardTmpl = document.getElementById('result').innerHTML;
+
+
+
+        function findMatches(from, destination, cities) {
+            return cities.filter(place => {
+                const regexFrom = new RegExp(from, 'gi');
+                const regexTo = new RegExp(destination, 'gi');
+                return place.departure.match(regexFrom) && place.arrival.match(regexTo);
+            });
+
         }
-    //Make object from string
-    let citiesTotal = JSON.parse(citiesList.responseText);
-    console.log(citiesTotal);
-    
-}
 
-searchForm.addEventListener('submit', function (e) {
-    e.preventDefault();    
 
-	citiesList.open("GET", "../data/cities.json"); //Set AJAX request
-	citiesList.send(); //Send AJAX request
-});
+        //Set new request
+
+        let routes = new XMLHttpRequest();
+
+        routes.onload = function () {
+            // If bad request exit from function
+            if (routes.status !== 200) {
+                return;
+            }
+            //Make object from string
+            let routesList = JSON.parse(routes.responseText);
+            //Check if wanted departure and arrival points equal to race departure and arrival points
+            const resultRoutes = findMatches(departureCity.value, arrivalCity.value, routesList);
+
+
+            let searchResults = document.querySelector('.ba-search-results');
+
+            resultRoutes.forEach(route => {
+                let resultHTML = resultCardTmpl
+                    .replace(/⏰departure⏰/ig, route.departure)
+                    .replace(/⏰arrival⏰/ig, route.arrival)
+                    .replace(/⏰race-number⏰/ig, route.trip)
+                    .replace(/⏰departuretime⏰/ig, route.departuretime)
+                    .replace(/⏰departureStation⏰/ig, route.departureStation)
+                    .replace(/⏰time⏰/ig, route.time)
+                    .replace(/⏰arrivalStation⏰/ig, route.arrivalStation)
+                    .replace(/⏰cost⏰/ig, route.cost)
+                    .replace(/⏰arrivaltime⏰/ig, route.arrivaltime)
+                    .replace(/⏰carrier⏰/ig, route.carrier)
+                    .replace(/⏰bus⏰/ig, route.bus);
+
+                searchResults.innerHTML += resultHTML;
+            });
+
+            //Open and hide search result details
+
+            let resultCard = $('.ba-result-card');
+
+            resultCard.find('.ba-more-button').on('click', function (e) {
+                e.preventDefault();
+                let chosenCard = $(this).closest(resultCard);
+
+
+                chosenCard.find('.ba-result-card__details').slideToggle();
+                chosenCard.find('.ba-result-card__main').toggleClass('ba-result-card__main--opened');
+                $(this).toggleClass('ba-more-button--opened');
+            });
+        }
+
+        searchForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            let departureCityVal = searchForm.querySelector('[name="from"]').value;
+            let arrivalCityVal = searchForm.querySelector('[name="destination"]').value;
+            let dateVal = searchForm.querySelector('[name="date"]').value;
+            let seatsQtyVal = searchForm.querySelector('[name="seats-quantity"]').value;
+
+            //Save data from fields to session storage
+            sessionStorage.setItem('departure', departureCityVal);
+            sessionStorage.setItem('arrival', arrivalCityVal);
+            sessionStorage.setItem('date', dateVal);
+            sessionStorage.setItem('seatsQty', seatsQtyVal);
+            console.log(sessionStorage);
+
+
+
+            routes.open("GET", "data/cities.json"); //Set AJAX request
+            routes.send(); //Send AJAX request
+        });
+
+        //Search form autocomplete 

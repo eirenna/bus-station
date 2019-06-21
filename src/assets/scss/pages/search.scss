@@ -32,10 +32,10 @@
 .ba-result-card {
     background-color: $light-gray;
     padding: 27px;
-    &__main {
-        padding-bottom: 30px;
+    &__main {        
         &--opened {
             border-bottom: 1px solid rgba(44, 90, 113, 0.4);
+            padding-bottom: 30px;
         }        
     }
     &__left {

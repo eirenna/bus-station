@@ -64,12 +64,13 @@
 // @include motion-ui-animations;
  
 @import "slick.scss";
+//@import "slick-theme.scss";
 @import "fonts";
 @import "main";
 
 @import "components/header";
 @import "components/footer";
 @import "components/datepicker";
-@import "components/search";
+@import "components/search-form";
 @import "pages/front";
-@import "pages/bus-schedule";
+@import "pages/search";

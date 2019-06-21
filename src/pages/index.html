@@ -2,7 +2,7 @@
 title: Bus Station - Home
 ---
 
-{{>search}}
+{{>search-form}}
 
 <section class="ba-section">
   <div class="row column">
@@ -68,7 +68,7 @@ title: Bus Station - Home
           <div
             class="ba-about-box__img flex-container align-middle align-center"
           >
-            <img src="{{ root }}/assets/img/simplicity.svg" alt="" />
+            <img src="{{ root }}assets/img/simplicity.svg" alt="" />
           </div>
           <!-- /.ba-about-box__img -->
           <h3 class="ba-about-box__title">Простота</h3>
@@ -86,7 +86,7 @@ title: Bus Station - Home
           <div
             class="ba-about-box__img flex-container align-middle align-center"
           >
-            <img src="{{ root }}/assets/img/reliability.svg" alt="" />
+            <img src="{{ root }}assets/img/reliability.svg" alt="" />
           </div>
           <!-- /.ba-about-box__img -->
           <div class="ba-about-box__title">Надійність</div>
@@ -106,7 +106,7 @@ title: Bus Station - Home
           <div
             class="ba-about-box__img flex-container align-middle align-center"
           >
-            <img src="{{ root }}/assets/img/support.svg" alt="" />
+            <img src="{{ root }}assets/img/support.svg" alt="" />
           </div>
           <!-- /.ba-about-box__img -->
           <div class="ba-about-box__title">Підтримка</div>
@@ -146,18 +146,99 @@ title: Bus Station - Home
 <section class="ba-section ba-section--partners">
   <div class="row align-middle">
     <div class="colunm small-12 medium-4 text-center">
-      <img src="{{ root }}/assets/img/busfor.png" alt="" />
+      <img src="{{ root }}assets/img/busfor.png" alt="" />
     </div>
     <!-- /.colunm small-12 medium-4 -->
     <div class="colunm small-12 medium-4 text-center">
-      <img src="{{ root }}/assets/img/gunsel.png" alt="" />
+      <img src="{{ root }}assets/img/gunsel.png" alt="" />
     </div>
     <!-- /.colunm small-12 medium-4 -->
     <div class="colunm small-12 medium-4 text-center">
-      <img src="{{ root }}/assets/img/autolux.png" alt="" />
+      <img src="{{ root }}assets/img/autolux.png" alt="" />
     </div>
     <!-- /.colunm small-12 medium-4 -->
   </div>
   <!-- /.row column -->
 </section>
 <!-- /.ba-section -->
+<section class="ba-section ba-section--blog">
+  <div class="row ba-blog-slider">
+    <article class="column small-12 medium-6 ba-post">
+      <div class="row">
+        <div class="column small-12 medium-6">
+          <div class="ba-post__img">
+            <img src="{{root}}assets/img/post1.jpg" alt="">
+          </div>
+          <!-- /.ba-post__img -->
+        </div>
+        <!-- /.column small-12 medium-6 -->
+        <div class="column small-12 medium-6">
+          <div class="ba-post__text">
+            <h3 class="ba-post__heading">10  простих лайфхаків</h3>
+            <p>Як самотужки подорожувати по Європі</p>
+            <a href="#" class="ba-more">читати  більше</a> <!-- /.ba-more -->
+          </div>
+          <!-- /.ba-post__text -->
+        </div>
+        <!-- /.column small-12 medium-6 -->
+      </div>
+    </article>
+    <article class="column small-12 medium-6 ba-post">
+      <div class="row">
+        <div class="column small-12 medium-6">
+          <div class="ba-post__img">
+            <img src="{{root}}assets/img/post2.jpg" alt="">
+          </div>
+          <!-- /.ba-post__img -->
+        </div>
+        <!-- /.column small-12 medium-6 -->
+        <div class="column small-12 medium-6">
+          <div class="ba-post__text">
+            <h3 class="ba-post__heading">Як не стати жервою шахраїв</h3>
+            <p>Та як уникнути неприємних ситуацій у подорожі</p>
+            <a href="#" class="ba-more">читати  більше</a> <!-- /.ba-more -->
+          </div>
+          <!-- /.ba-post__text -->
+        </div>
+        <!-- /.column small-12 medium-6 -->
+      </div>
+    </article>
+    <article class="column small-12 medium-6 ba-post">
+      <div class="row">
+        <div class="column small-12 medium-6">
+          <div class="ba-post__img">
+            <img src="{{root}}assets/img/post1.jpg" alt="">
+          </div>
+          <!-- /.ba-post__img -->
+        </div>
+        <!-- /.column small-12 medium-6 -->
+        <div class="column small-12 medium-6">
+          <div class="ba-post__text">
+            <h3 class="ba-post__heading">10  простих лайфхаків</h3>
+            <p>Як самотужки подорожувати по Європі</p>
+            <a href="#" class="ba-more">читати  більше</a> <!-- /.ba-more -->
+          </div>
+          <!-- /.ba-post__text -->
+        </div>
+        <!-- /.column small-12 medium-6 -->
+      </div>
+    </article>
+    <div class="ba-slider-arrows">
+      <button class="ba-slider-btn" data-prev>
+        <svg width="17" height="30" viewBox="0 0 17 30" fill="none">
+          <path d="M0.254003 15.0782L14.5354 28.766C14.8717 29.0882 15.4112 29.0885 15.7478 28.7666C16.0844 28.4447 16.0847 27.9281 15.7484 27.6058L2.07607 14.5018L15.762 1.41206C16.0986 1.09013 16.0989 0.573549 15.7626 0.25127C15.5977 0.0931705 15.3755 0.00797215 15.1597 0.00786008C14.9439 0.00774801 14.7217 0.0866388 14.5566 0.250644L0.260948 13.9235C-0.0756405 14.2394 -0.07591 14.762 0.254003 15.0782Z" fill="#2C5A71"/>
+          </svg>
+          
+      </button>
+      <button class="ba-slider-btn" data-next>
+        <svg width="16" height="29" viewBox="0 0 16 29" fill="none">
+          <path d="M15.7532 13.9219L1.46472 0.241578C1.12829 -0.080526 0.588743 -0.080526 0.252318 0.241578C-0.0841061 0.563682 -0.0841061 1.08026 0.252318 1.40237L13.9315 14.4992L0.252318 27.5961C-0.0841061 27.9182 -0.0841061 28.4348 0.252318 28.7569C0.417357 28.9149 0.639524 29 0.855343 29C1.07116 29 1.29333 28.921 1.45837 28.7569L15.7469 15.0766C16.0833 14.7606 16.0833 14.2379 15.7532 13.9219Z" fill="#2C5A71"/>
+          </svg>
+          
+      </button>
+    </div>
+    <!-- /.ba-slider-arrows -->
+  </div>
+  <!-- /.row -->
+</section>
+<!-- /.ba-section ba-section--blog -->
