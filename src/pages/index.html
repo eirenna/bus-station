@@ -5,26 +5,24 @@ title: Bus Station - Home
 <section class="ba-intro">
   <div class="row column">
     <div class="ba-search align-right">
-      <form action="search.html" method="get" class="ba-redirection-form">
-        <div class="ba-redirection-form__group">
-          <div class="ba-redirection-form__inner-group">
+      <form action="search.html" method="get" class="ba-search-form">
+        <div class="ba-search-form__group">
+          <div class="ba-search-form__inner-group">
             <input
               type="text"
               name="from"
-              class="ba-redirection-form__input"
+              class="ba-search-form__input"
               placeholder="Звідки"
               required
-              value="Полтава"
             />
             <input
               type="text"
               name="destination"
-              class="ba-redirection-form__input"
+              class="ba-search-form__input"
               placeholder="Куди"
               required
-              value="Київ"
             />
-            <button class="ba-direction-btn">
+            <button class="ba-direction-btn" type="button">
                 <img
                   src="{{ root }}assets/img/direction.jpg"
                   alt=""
@@ -33,17 +31,17 @@ title: Bus Station - Home
               </button>
               <!-- /.ba-direction-btn -->
           </div>
-          <!-- /.ba-redirection-form__destination -->
-          <div class="ba-redirection-form__inner-group">
+          <!-- /.ba-search-form__destination -->
+          <div class="ba-search-form__inner-group">
               <input data-toggle="datepicker" 
-                class="ba-redirection-form__input ba-redirection-form__input--spaced ba-redirection-form__input--data"
+                class="ba-search-form__input ba-search-form__input--spaced ba-search-form__input--data"
                 placeholder="Дата"
                 name="date"
-                
+                required
               />
               <select
                 name="seats-quantity"
-                class="ba-redirection-form__input ba-redirection-form__input--spaced ba-select"
+                class="ba-search-form__input ba-search-form__input--spaced ba-select"
               >
                 <option value="" selected>К-сть місць</option>
                 <option value="1">1</option>
@@ -58,11 +56,11 @@ title: Bus Station - Home
                 <option value="10">10</option>
               </select>       
           </div>
-          <!-- /.ba-redirection-form__inner-group -->   
+          <!-- /.ba-search-form__inner-group -->   
         </div>
         <button type="submit" class="ba-button">ШУКАТИ</button>
       </form>
-      <!-- /.ba-redirection-form -->
+      <!-- /.ba-search-form -->
     </div>
     <!-- /.ba-search -->
   </div>

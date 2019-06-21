@@ -5,7 +5,7 @@ title: Bus Station - Bus Schedule
 <section class="ba-intro">
   <div class="row column">
     <div class="ba-search align-right">
-      <form action="#" method="POST" class="ba-search-form" id="search-from">
+      <form action="search.html" method="get" class="ba-search-form" id="search-form">
         <div class="ba-search-form__group">
           <div class="ba-search-form__inner-group">
             <input
@@ -14,7 +14,6 @@ title: Bus Station - Bus Schedule
               class="ba-search-form__input"
               placeholder="Звідки"
               required
-              value="Полтава"
             />
             <input
               type="text"
@@ -22,7 +21,6 @@ title: Bus Station - Bus Schedule
               class="ba-search-form__input"
               placeholder="Куди"
               required
-              value="Київ"
             />
             <button class="ba-direction-btn" type="button">
                 <img
@@ -39,7 +37,7 @@ title: Bus Station - Bus Schedule
                 class="ba-search-form__input ba-search-form__input--spaced ba-search-form__input--data"
                 placeholder="Дата"
                 name="date"
-                
+                required
               />
               <select
                 name="seats-quantity"
@@ -69,6 +67,7 @@ title: Bus Station - Bus Schedule
   <!-- /.row column -->
 </section>
 <!-- /.ba-intro -->
+
 <nav aria-label="Ви знаходитесь тут: " role="navigation">
   <ul class="breadcrumbs">
     <li><a href="#">Головна</a></li>

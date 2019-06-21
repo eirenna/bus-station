@@ -16,8 +16,7 @@
     }    
 }
 
-.ba-search-form,
-.ba-redirection-form {    
+.ba-search-form {    
     @include breakpoint(medium){
       display: flex;
     }

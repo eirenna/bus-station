@@ -6,23 +6,28 @@
         "arrivalStation": "AC Київ",
         "route": [{
                 "city": "Полтава",
-                "station": "Полтава АВ"
+                "station": "Полтава АВ",
+                "depTime":  "09:15"
             },
             {
                 "city": "Лубни",
-                "station": "Лубни АС"
+                "station": "Лубни АС",
+                "depTime":  "10.30"
             },
             {
                 "city": "Пирятин",
-                "station": "Пирятин АС-1"
+                "station": "Пирятин АС-1",
+                "depTime":  "12.50"
             },
             {
                 "city": "Бориспіль",
-                "station": "Бориспіль АЕ"
+                "station": "Бориспіль АЕ",
+                "depTime": "14.00" 
             },
             {
                 "city": "Київ",
-                "station": "АС Київ"
+                "station": "АС Київ",
+                "depTime":  "14:30"
             }
         ],
         "trip": "120",

@@ -32,12 +32,11 @@ function changeDirection() {
     btn.classList.toggle('ba-rotate');
     from.value = toVal;
     to.value = fromVal;
-
 }
 
+changeDirectionBtn.addEventListener('click', changeDirection);
 
 //Datepicker settings
-changeDirectionBtn.addEventListener('click', changeDirection);
 let today = new Date();
 
 
@@ -55,6 +54,8 @@ $('[data-toggle="datepicker"]').datepicker({
     startDate: today
 });
 
+
+//Slider
 let blogSlider = $('.ba-blog-slider');
 
 blogSlider.slick({
@@ -82,10 +83,6 @@ let arrivalCity = searchForm.querySelector('[name="destination"]');
 let date = searchForm.querySelector('[name="date"]');
 let seatsQty = searchForm.querySelector('[name="seats-quantity"]');
 
-let pageName = location.pathname.substring(1);
-
-
-let resultCardTmpl = document.getElementById('result').innerHTML;
 
 function getUrlParameter(name) {
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
@@ -94,43 +91,64 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
-//Set new request
-
+//Declare new request
 let routes = new XMLHttpRequest();
 
+
+//Get data from address bar
 let from = getUrlParameter('from');
-if (from) {
+let destination = getUrlParameter('destination');
+let searchDate = getUrlParameter('date');
+let seats = getUrlParameter('seats-quantity');
+
+//When have all data, write it to the serach form's fields and make search
+if (from && destination && searchDate && seats) {
     departureCity.value = from;
-    // displayMatches();
+    arrivalCity.value = destination;
+    date.value = searchDate;
+    seatsQty.value = seats;
     showResults();
+}
+
+
+
+function searchFinalRoute(from, to, array) {
+    let finalRoute = [];
+    let intermediateRoute = [];
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].city == from) {
+            intermediateRoute = array.slice(i, array.length);
+            
+        }
+    }
+
+    if (intermediateRoute.length > 0) {
+        for (let j = 0; j < intermediateRoute.length; j++) {
+            if (intermediateRoute[j].city == to) {
+                finalRoute = intermediateRoute.slice(0, (j + 1));
+            }
+        }
+    }  else {
+        return;
+    }
+
+    if(finalRoute.length > 0) {         
+        return true;
+    }
 }
 
 
 
 function findMatches(from, destination, cities) {
     return cities.filter(place => {
-        // const regexFrom = new RegExp(from, 'gi');
-        // const regexTo = new RegExp(destination, 'gi');
-        // return place.departure.match(regexFrom) && place.arrival.match(regexTo);
-        return findInRoute(from, destination, place.route);
+        if (searchFinalRoute(from, destination, place.route)) {
+            return place;
+        }
+        
     });
 
 }
-
-function findInRoute(from, destination, route) {
-    let inRoute = route.filter(place => {
-        const regexFrom = new RegExp(from, 'gi');
-        //const regexTo = new RegExp(destination, 'gi');
-
-        return place.city.match(regexFrom);
-    });
-    console.log(inRoute);
-
-    return inRoute.length > 0;
-}
-
-
-
 
 routes.onload = function () {
     // If bad request exit from function
@@ -140,8 +158,10 @@ routes.onload = function () {
     //Make object from string
     let routesList = JSON.parse(routes.responseText);
     //Check if wanted departure and arrival points equal to race departure and arrival points
+
     const resultRoutes = findMatches(departureCity.value, arrivalCity.value, routesList);
 
+    let resultCardTmpl = document.getElementById('result').innerHTML;
 
     let searchResults = document.querySelector('.ba-search-results');
     searchResults.innerHTML = '';
@@ -163,7 +183,6 @@ routes.onload = function () {
     });
 
     //Open and hide search result details
-
     let resultCard = $('.ba-result-card');
 
     resultCard.find('.ba-more-button').on('click', function (e) {
@@ -177,28 +196,13 @@ routes.onload = function () {
     });
 }
 
-let searchFormAJAX = document.getElementById('search-from');
+let searchFormAJAX = document.getElementById('search-form');
 
 function showResults(e) {
-    if(e)
+    if (e)
         e.preventDefault();
-
-    let departureCityVal = searchForm.querySelector('[name="from"]').value;
-    let arrivalCityVal = searchForm.querySelector('[name="destination"]').value;
-    let dateVal = searchForm.querySelector('[name="date"]').value;
-    let seatsQtyVal = searchForm.querySelector('[name="seats-quantity"]').value;
-
-    //Save data from fields to session storage
-    // sessionStorage.setItem('departure', departureCityVal);
-    // sessionStorage.setItem('arrival', arrivalCityVal);
-    // sessionStorage.setItem('date', dateVal);
-    // sessionStorage.setItem('seatsQty', seatsQtyVal);
-
-
 
     routes.open("GET", "data/cities.json"); //Set AJAX request
     routes.send(); //Send AJAX request
 }
 searchFormAJAX.addEventListener('submit', showResults);
-
-//Search form autocomplete 
