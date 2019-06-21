@@ -205,4 +205,7 @@ function showResults(e) {
     routes.open("GET", "data/cities.json"); //Set AJAX request
     routes.send(); //Send AJAX request
 }
-searchFormAJAX.addEventListener('submit', showResults);
+
+if (searchFormAJAX) {
+    searchFormAJAX.addEventListener('submit', showResults);
+}
