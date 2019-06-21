@@ -2,7 +2,73 @@
 title: Bus Station - Home
 ---
 
-{{>search-form}}
+<section class="ba-intro">
+  <div class="row column">
+    <div class="ba-search align-right">
+      <form action="search.html" method="get" class="ba-redirection-form">
+        <div class="ba-redirection-form__group">
+          <div class="ba-redirection-form__inner-group">
+            <input
+              type="text"
+              name="from"
+              class="ba-redirection-form__input"
+              placeholder="Звідки"
+              required
+              value="Полтава"
+            />
+            <input
+              type="text"
+              name="destination"
+              class="ba-redirection-form__input"
+              placeholder="Куди"
+              required
+              value="Київ"
+            />
+            <button class="ba-direction-btn">
+                <img
+                  src="{{ root }}assets/img/direction.jpg"
+                  alt=""
+                  class="ba-direction-btn__img"
+                />
+              </button>
+              <!-- /.ba-direction-btn -->
+          </div>
+          <!-- /.ba-redirection-form__destination -->
+          <div class="ba-redirection-form__inner-group">
+              <input data-toggle="datepicker" 
+                class="ba-redirection-form__input ba-redirection-form__input--spaced ba-redirection-form__input--data"
+                placeholder="Дата"
+                name="date"
+                
+              />
+              <select
+                name="seats-quantity"
+                class="ba-redirection-form__input ba-redirection-form__input--spaced ba-select"
+              >
+                <option value="" selected>К-сть місць</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>       
+          </div>
+          <!-- /.ba-redirection-form__inner-group -->   
+        </div>
+        <button type="submit" class="ba-button">ШУКАТИ</button>
+      </form>
+      <!-- /.ba-redirection-form -->
+    </div>
+    <!-- /.ba-search -->
+  </div>
+  <!-- /.row column -->
+</section>
+<!-- /.ba-intro -->
 
 <section class="ba-section">
   <div class="row column">
