@@ -178,3 +178,82 @@ z-index: 0;
     }
   }
 }
+
+.ba-section--app{
+  img {
+    max-width: 110%;
+  }
+  h2{
+    margin-bottom: 20px;
+  }
+  P {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    margin-bottom: 90px;
+  }
+ }
+ .app-logo {
+  img:first-child{
+    margin-right: 51px;
+  }
+ }
+
+//Direction
+.ba-ukr-direction-list, .ba-abroad-direction-list {
+  list-style: none;
+  a{
+    width: 100%;
+    color: #595656;
+  }
+  a:hover p {
+    color: #00D2D2;
+  }
+  a:hover .direction::before{
+    background-color: #00D2D2;
+  }
+ 
+  .direction{
+    position: relative;
+    padding-left: 35px;
+    letter-spacing: 0.05em;
+    line-height: 2em;
+  }
+  .direction::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    z-index: 1;
+  }
+  .direction::after{
+      position: absolute;
+      content: '';
+      left: 8px;
+      top: 23px;
+      width: 1px;
+      height: 36px;
+      background-color: #193341;
+  }
+  .ba-direction__item:last-child .direction::after{
+    display: none;
+  }
+  .ba-direction__price{
+    margin-left: auto;
+    line-height: 2em;
+  }
+ }
+ 
+ .ba-more {
+  span {
+    margin-right: 25px;
+    margin-left: auto;
+  }
+ }
