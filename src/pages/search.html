@@ -81,7 +81,7 @@ title: Bus Station - Bus Schedule
   <h2 class="text-center">Розклад автобусів</h2>
   <div class="ba-user-choise">
     <div class="ba-user-choise__direction">
-      Полтава
+      <span class="ba-user-choise__from"></span>
       <svg
         width="70"
         height="8"
@@ -94,7 +94,7 @@ title: Bus Station - Bus Schedule
           fill="#2C5A71"
         />
       </svg>
-      Київ
+      <span class="ba-user-choise__to"></span>
     </div>
     <!-- /.ba-user-choise__direction -->
     <div class="ba-user-choise__date">Вт. 21.08</div>
@@ -139,7 +139,7 @@ title: Bus Station - Bus Schedule
                       <div class="ba-result-card__top">
                           <div class="ba-date text-center">
                               <div class="ba-bold">⏰departuretime⏰</div>
-                              <div>Вт. 21.08</div>
+                              <div>⏰userDate⏰</div>
                           </div>
                           <!-- /.ba-date -->
                           <div class="ba-departure text-center">
@@ -150,6 +150,7 @@ title: Bus Station - Bus Schedule
                           <div class="ba-duration text-center">
                               <div class="ba-duration__top">⏰time⏰</div>
                               <!-- /.ba-duration__top -->
+                              <div class="ba-duration__round"></div>
                               <div>у дорозі</div>
                           </div>
                           <!-- /.ba-duration -->
@@ -160,7 +161,7 @@ title: Bus Station - Bus Schedule
                           <!-- /.ba-arrival text-center -->
                       </div>
                       <!-- /.ba-result-card__top -->
-                      <div class="ba-result-card__bottom">
+                      <div class="ba-result-card__bottom flex-container align-middle">
                           <div>Вiльних місць: <span>10</span></div>
                           <div>
                               <span class="ba-price">⏰cost⏰ грн</span> <!-- /.ba-price -->
@@ -216,7 +217,7 @@ title: Bus Station - Bus Schedule
               <!-- /.ba-route__point -->
           </div>
           <!-- /.ba-route -->
-          <div class="ba-result-card__bus-details">
+          <div class="ba-result-card__bus-details flex-container align-justify">
               <span>Перевізник: ⏰carrier⏰</span>
               <span>Модель автобусу: ⏰bus⏰</span>
           </div>

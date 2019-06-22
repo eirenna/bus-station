@@ -177,7 +177,8 @@ routes.onload = function () {
             .replace(/⏰cost⏰/ig, route.cost)
             .replace(/⏰arrivaltime⏰/ig, route.arrivaltime)
             .replace(/⏰carrier⏰/ig, route.carrier)
-            .replace(/⏰bus⏰/ig, route.bus);
+            .replace(/⏰bus⏰/ig, route.bus)
+            .replace(/⏰userDate⏰/ig, date.value);
 
         searchResults.innerHTML += resultHTML;
     });
@@ -201,6 +202,14 @@ let searchFormAJAX = document.getElementById('search-form');
 function showResults(e) {
     if (e)
         e.preventDefault();
+    
+    let userFrom = document.querySelector('.ba-user-choise__from');
+    let userTo = document.querySelector('.ba-user-choise__to');
+    let userDate = document.querySelector('.ba-user-choise__date'); 
+   
+    userFrom.textContent = departureCity.value;
+    userTo.textContent = arrivalCity.value;
+    userDate.textContent = date.value;    
 
     routes.open("GET", "data/cities.json"); //Set AJAX request
     routes.send(); //Send AJAX request
