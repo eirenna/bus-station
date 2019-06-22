@@ -49,6 +49,7 @@
     @include breakpoint(large) {
       padding-right: 30px;
       border-right: 1px solid #2c5a71;
+      border-bottom: none;
     }
   }
   &__route-name {
