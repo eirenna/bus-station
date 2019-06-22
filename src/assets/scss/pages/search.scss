@@ -44,8 +44,12 @@
     }
   }
   &__left {
-    padding-right: 30px;
-    border-right: 1px solid #2c5a71;
+    border-bottom: 1px solid #2c5a71;
+    padding-bottom: 30px;
+    @include breakpoint(large) {
+      padding-right: 30px;
+      border-right: 1px solid #2c5a71;
+    }
   }
   &__route-name {
     display: flex;
@@ -60,9 +64,12 @@
   }
 
   &__right {
-    //padding-left: 30px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
+    @include breakpoint(large){
+      padding-top: 0;
+    }
   }
   &__top {
     margin-bottom: 50px;
@@ -178,6 +185,6 @@
 }
 
 .ba-seat-qty {
-    color: $primary-color;
-    margin-left: 10px;
+  color: $primary-color;
+  margin-left: 10px;
 }

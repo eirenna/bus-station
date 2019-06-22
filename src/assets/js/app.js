@@ -134,7 +134,7 @@ function searchFinalRoute(from, to, array) {
     }
 
     if(finalRoute.length > 0) {         
-        return true;
+        return finalRoute;
     }
 }
 
@@ -160,6 +160,7 @@ routes.onload = function () {
     //Check if wanted departure and arrival points equal to race departure and arrival points
 
     const resultRoutes = findMatches(departureCity.value, arrivalCity.value, routesList);
+   
 
     let resultCardTmpl = document.getElementById('result').innerHTML;
 
@@ -178,7 +179,10 @@ routes.onload = function () {
             .replace(/⏰arrivaltime⏰/ig, route.arrivaltime)
             .replace(/⏰carrier⏰/ig, route.carrier)
             .replace(/⏰bus⏰/ig, route.bus)
-            .replace(/⏰userDate⏰/ig, date.value);
+            .replace(/⏰userDate⏰/ig, date.value)
+            .replace(/⏰wantedDeparture⏰/ig, departureCity.value)
+            .replace(/⏰wantedArrival⏰/ig, arrivalCity.value);
+           
 
         searchResults.innerHTML += resultHTML;
     });

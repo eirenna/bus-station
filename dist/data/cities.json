@@ -1,0 +1,897 @@
+[
+    {
+        "departure": "Полтава",
+        "arrival": "Київ",
+        "departureStation": "Полтава АВ",
+        "arrivalStation": "AC Київ",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "09:15"
+            },
+            {
+                "city": "Лубни",
+                "station": "Лубни АС",
+                "depTime":  "10.30"
+            },
+            {
+                "city": "Пирятин",
+                "station": "Пирятин АС-1",
+                "depTime":  "12.50"
+            },
+            {
+                "city": "Бориспіль",
+                "station": "Бориспіль АЕ",
+                "depTime": "14.00" 
+            },
+            {
+                "city": "Київ",
+                "station": "АС Київ",
+                "depTime":  "14:30"
+            }
+        ],
+        "trip": "120",
+        "departuretime": "09:15",
+        "arrivaltime": "14:30",
+        "time": "5 год. 15 хв.",
+        "cost": "210",
+        "carrier": "ФОП Бринцов С.В.",
+        "bus": "Van Hool 2(free)"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Київ",
+        "departureStation": "Полтава АВ",
+        "arrivalStation": "Центральний",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "19:05"
+            },
+            {
+                "city": "Хорол",
+                "station": "Хорол АС",
+                "depTime":  "20:08"
+            },
+            {
+                "city": "Пирятин",
+                "station": "Пирятин АС-1",
+                "depTime":  "21:40"
+            },
+            {
+                "city": "Бориспіль",
+                "station": "Бориспіль АЕ",
+                "depTime":  "00:00"
+            },
+            {
+                "city": "Київ",
+                "station": "Центральний",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "179",
+        "departuretime": "19:05",
+        "arrivaltime": "00:30",
+        "time": "5 год. 25 хв.",
+        "cost": "220",
+        "carrier": "Gunsel TOV",
+        "bus": "МЕРСЕДЕС"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Київ",
+        "departureStation": "Полтава АВ",
+        "arrivalStation": "Центральний",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Лубни",
+                "station": "Лубни АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Пирятин",
+                "station": "Пирятин АС-1",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Бориспіль",
+                "station": "Бориспіль АЕ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Київ",
+                "station": "Центральний",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "123",
+        "departuretime": "02:35",
+        "arrivaltime": "08:00",
+        "time": "5 год. 25 хв.",
+        "cost": "289",
+        "carrier": "ТОВ ЮНАС",
+        "bus": "МЕРСЕДЕС (42)"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Київ",
+        "departureStation": "Полтава АВ",
+        "arrivalStation": "метро Харківська",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Лубни",
+                "station": "Лубни АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Пирятин",
+                "station": "Пирятин АС-1",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Бориспіль",
+                "station": "Бориспіль АЕ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Київ",
+                "station": "метро Харківська",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "135",
+        "departuretime": "19:00",
+        "arrivaltime": "00:00",
+        "time": "5 год. 00 хв.",
+        "cost": "300",
+        "carrier": "Тунч Мурат",
+        "bus": "Mercedes Sprinter"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Одеса",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Хорол",
+                "station": "Хорол АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Пирятин",
+                "station": "Пирятин АС-2",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Умань",
+                "station": "Умань АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Одеса",
+                "station": "Привокзальна",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "235",
+        "departuretime": "14:30",
+        "arrivaltime": "03:00",
+        "time": "12 год. 30 хв.",
+        "cost": "550",
+        "carrier": "Бринцов С.В.",
+        "bus": "Setra S 315 НDH"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Одеса",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Хорол",
+                "station": "Хорол АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Пирятин",
+                "station": "Пирятин АС-2",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Умань",
+                "station": "Умань АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Одеса",
+                "station": "Автовокзал",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "275",
+        "departuretime": "10:00",
+        "arrivaltime": "20:50",
+        "time": "10 год. 50 хв.",
+        "station": "Автовокзал",
+        "cost": "579",
+        "carrier": "Рік Авто ТОВ",
+        "bus": "King Long"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Одеса",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Хорол",
+                "station": "Хорол АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Пирятин",
+                "station": "Пирятин АС-2",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Умань",
+                "station": "Умань АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Одеса",
+                "station": "Привокзальна",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "255",
+        "departuretime": "10:00",
+        "arrivaltime": "20:00",
+        "time": "10 год. 00 хв.",
+        "station": "Привокзальна",
+        "cost": "593",
+        "carrier": "ФОП ШАБЛIЙ А.М.",
+        "bus": "ВАН-ХОЛ (47)"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Одеса",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Хорол",
+                "station": "Хорол АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Пирятин",
+                "station": "Пирятин АС-2",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Умань",
+                "station": "Умань АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Одеса",
+                "station": "Привокзальна",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "024",
+        "departuretime": "09:59",
+        "arrivaltime": "23:00",
+        "time": "13 год. 01 хв.",
+        "cost": "593",
+        "carrier": "ТОВ ЛIНII ПОЛIССЯ",
+        "bus": "ВАН-ХОЛ (47)"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Харків",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Харків",
+                "station": "Харків-1",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "034",
+        "departuretime": "17:45",
+        "arrivaltime": "19:30",
+        "time": "1 год. 45 хв.",
+        "cost": "109",
+        "carrier": "Z-Time",
+        "bus": "BOVA"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Харків",
+        "routeName": "Полтава - Харків",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Чутове",
+                "station": "Чутове АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Харків",
+                "station": "Харків-1",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "040",
+        "departuretime": "03:55",
+        "arrivaltime": "06:10",
+        "time": "2 год. 15 хв.",
+        "cost": "155",
+        "carrier": "Gunsel TOV",
+        "bus": "Skania"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Харків",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Чутове",
+                "station": "Чутове АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Валки",
+                "station": "Валки АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Харків",
+                "station": "Харків-1",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "034",
+        "departuretime": "05:00",
+        "arrivaltime": "07:50",
+        "time": "2 год. 50 хв.",
+        "cost": "97",
+        "carrier": "Денисівка ТДВ",
+        "bus": "Skania Higer A 80"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Харків",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Харків",
+                "station": "Харків-1",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "041",
+        "departuretime": "13:20",
+        "arrivaltime": "15:30",
+        "time": "2 год. 10 хв.",
+        "cost": "155",
+        "carrier": "Gunsel TOV",
+        "bus": "Skania"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Суми",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Суми",
+                "station": "Суми АС",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "141",
+        "departuretime": "15:20",
+        "arrivaltime": "19:45",
+        "time": "4 год. 25 хв.",
+        "cost": "142",
+        "carrier": "Gunsel TOV",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Суми",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Суми",
+                "station": "Суми АС",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "142",
+        "departuretime": "07:50",
+        "arrivaltime": "12:15",
+        "time": "4 год. 25 хв.",
+        "cost": "185",
+        "carrier": "Gunsel TOV",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Суми",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Суми",
+                "station": "Суми АС",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "150",
+        "departuretime": "18:00",
+        "arrivaltime": "21:35",
+        "time": "3 год. 35 хв.",
+        "station": "АС Суми",
+        "cost": "199",
+        "carrier": "Gunsel TOV",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Суми",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Суми",
+                "station": "Суми АС",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "165",
+        "departuretime": "17:20",
+        "arrivaltime": "21:45",
+        "time": "4 год. 25 хв.",
+        "cost": "142",
+        "carrier": "Gunsel TOV",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Кременчук",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Глобино",
+                "station": "Глобино АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Кременчук",
+                "station": "Кременчук АВ",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "102",
+        "departuretime": "06:30",
+        "arrivaltime": "08:10",
+        "time": "1 год. 40 хв.",
+        "cost": "111",
+        "carrier": "Gunsel TOV",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Кременчук",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Глобино",
+                "station": "Глобино АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Кременчук",
+                "station": "Кременчук АВ",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "105",
+        "departuretime": "10:25",
+        "arrivaltime": "12:10",
+        "time": "1 год. 45 хв.",
+        "cost": "111",
+        "carrier": "Gunsel TOV",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Кременчук",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Глобино",
+                "station": "Глобино АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Кременчук",
+                "station": "Кременчук АВ",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "107",
+        "departuretime": "12:25",
+        "arrivaltime": "14:25",
+        "time": "2 год. 00 хв.",
+        "cost": "113",
+        "carrier": "Gunsel TOV",
+        "bus": "King Long"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Кременчук",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Глобино",
+                "station": "Глобино АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Кременчук",
+                "station": "Кременчук АВ",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "112",
+        "departuretime": "13:30",
+        "arrivaltime": "16:00",
+        "time": "2 год. 30 хв.",
+        "cost": "121",
+        "carrier": "Z-Time",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Черкаси",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Кременчук",
+                "station": "Кременчук АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Градизьк",
+                "station": "Градизьк АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Черкаси",
+                "station": "Черкаси АС",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "412",
+        "departuretime": "07:40",
+        "arrivaltime": "13:35",
+        "time": "5 год. 55 хв.",
+        "cost": "297",
+        "carrier": "Z-Time",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Черкаси",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Кременчук",
+                "station": "Кременчук АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Черкаси",
+                "station": "Черкаси АС",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "415",
+        "departuretime": "08:05",
+        "arrivaltime": "15:45",
+        "time": "7 год. 40 хв.",
+        "cost": "322",
+        "carrier": "Z-Time",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Черкаси",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Кременчук",
+                "station": "Кременчук АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Градизьк",
+                "station": "Градизьк АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Черкаси",
+                "station": "Черкаси АС",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "412",
+        "departuretime": "07:40",
+        "arrivaltime": "13:35",
+        "time": "5 год. 55 хв.",
+        "cost": "297",
+        "carrier": "Gunsel TOV ",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Черкаси",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Кременчук",
+                "station": "Кременчук АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Градизьк",
+                "station": "Градизьк АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Черкаси",
+                "station": "Черкаси АС",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "412",
+        "departuretime": "07:40",
+        "arrivaltime": "13:35",
+        "time": "5 год. 55 хв.",
+        "cost": "297",
+        "carrier": "Z-Time",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Дніпро",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Карлівка",
+                "station": "Карлівка АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Красноград",
+                "station": "Красноград АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Новомосковськ",
+                "station": "Новомосковськ АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Дніпро",
+                "station": "Дніпро АВ",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "572",
+        "departuretime": "18:20",
+        "arrivaltime": "22:15",
+        "time": "3 год. 55 хв.",
+        "cost": "184",
+        "carrier": "Gunsel TOV",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Дніпро",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Карлівка",
+                "station": "Карлівка АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Красноград",
+                "station": "Красноград АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Новомосковськ",
+                "station": "Новомосковськ АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Дніпро",
+                "station": "Дніпро АВ",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "577",
+        "departuretime": "06:10",
+        "arrivaltime": "10:16",
+        "time": "4 год. 06 хв.",
+        "cost": "197",
+        "carrier": "Gunsel TOV",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Дніпро",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Красноград",
+                "station": "Красноград АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Дніпро",
+                "station": "Дніпро АВ",
+                "depTime":  "00:30"
+            }
+        ],
+        "trip": "582",
+        "departuretime": "07:00",
+        "arrivaltime": "11:25",
+        "time": "4 год. 25 хв.",
+        "station": "ДНIПРО АВ",
+        "cost": "209",
+        "carrier": "Gunsel TOV",
+        "bus": "Mercedes"
+    },
+
+    {
+        "departure": "Полтава",
+        "arrival": "Дніпро",
+        "route": [{
+                "city": "Полтава",
+                "station": "Полтава АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Карлівка",
+                "station": "Карлівка АВ",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Красноград",
+                "station": "Красноград АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Новомосковськ",
+                "station": "Новомосковськ АС",
+                "depTime":  "00:30"
+            },
+            {
+                "city": "Дніпро",
+                "station": "Дніпро АВ"
+            }
+        ],
+        "trip": "592",
+        "departuretime": "22:20",
+        "arrivaltime": "01:40",
+        "time": "3 год. 20 хв.",
+        "cost": "210",
+        "carrier": "Gunsel TOV",
+        "bus": "Mercedes"
+    }
+]

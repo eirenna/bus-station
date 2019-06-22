@@ -1,0 +1,468 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Station - Home</title>
+  <meta name="description" content="">
+  <meta name="theme-color" content="#ff5912">
+
+  <meta property="og:title" content="Bus Station - Home" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <link rel="stylesheet" href="assets/css/app.css">
+
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ff5912">
+</head>
+
+<body>
+
+
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-content-scroll=false>
+      <nav>
+          <ul class="menu vertical">
+              <li class="active">
+                  <li class="active"><a href="index.html">Головна</a></li>
+                  <li ><a href="directions.html">Напрямки</a></li>
+              </li>
+          </ul>
+      </nav>    </div>
+    <div class="off-canvas-content" data-off-canvas-content>
+      <header class="ba-header-wrap">    
+          <div class="ba-header-header">
+              <div class="row align-middle ">
+                  <div class="column">
+                      <a href="/">
+                          <img src="assets/img/logo.svg" alt="Logo">
+                      </a>
+                  </div>
+                  <!-- /.column -->
+                  <div class="column shrink">
+                      <button class="ba-cabinet hide-for-medium" type="button" aria-label="Show Personal Cabinet">
+                                  <img src="assets/img/user.svg" alt="">
+                      </button>
+                      <button class="menu-icon hide-for-medium" type="button" data-open="offCanvas" aria-label="Show menu"></button>
+                      
+                      <ul class="menu ba-main-menu show-for-medium">
+                          <li class="active"><a href="index.html">Головна</a></li>
+                          <li ><a href="directions.html">Напрямки</a></li>
+                          <li ><a href="cabinet.html">Мій кабінет</a></li>
+                      </ul>
+                  </div>
+                  <!-- /.column -->
+              </div>
+              <!-- /.row -->
+          </div>
+      </header>      
+      <main>
+        
+        <section class="ba-intro">
+          <div class="row column">
+            <div class="ba-search align-right">
+              <form action="search.html" method="get" class="ba-search-form">
+                <div class="ba-search-form__group">
+                  <div class="ba-search-form__inner-group">
+                    <input
+                      type="text"
+                      name="from"
+                      class="ba-search-form__input"
+                      placeholder="Звідки"
+                      required
+                    />
+                    <input
+                      type="text"
+                      name="destination"
+                      class="ba-search-form__input"
+                      placeholder="Куди"
+                      required
+                    />
+                    <button class="ba-direction-btn" type="button">
+                        <img
+                          src="assets/img/direction.jpg"
+                          alt=""
+                          class="ba-direction-btn__img"
+                        />
+                      </button>
+                      <!-- /.ba-direction-btn -->
+                  </div>
+                  <!-- /.ba-search-form__destination -->
+                  <div class="ba-search-form__inner-group">
+                      <input data-toggle="datepicker" 
+                        class="ba-search-form__input ba-search-form__input--spaced ba-search-form__input--data"
+                        placeholder="Дата"
+                        name="date"
+                        required
+                      />
+                      <select
+                        name="seats-quantity"
+                        class="ba-search-form__input ba-search-form__input--spaced ba-select"
+                      >
+                        <option value="" selected>К-сть місць</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>       
+                  </div>
+                  <!-- /.ba-search-form__inner-group -->   
+                </div>
+                <button type="submit" class="ba-button">ШУКАТИ</button>
+              </form>
+              <!-- /.ba-search-form -->
+            </div>
+            <!-- /.ba-search -->
+          </div>
+          <!-- /.row column -->
+        </section>
+        <!-- /.ba-intro -->
+        
+        <section class="ba-section">
+          <div class="row column">
+            <h2 class="ba-section-title text-center h1">ЗАМОВЛЯЙ КВИТОК ОНЛАЙН</h2>
+            <div class="row">
+              <div
+                class="columns small-12 medium-6 large-3 flex-container align-center"
+              >
+                <div class="ba-step" data-number="1">
+                  <p class="ba-step__text">ЗАХОДЬ НА САЙТ</p>
+                  <!-- /.ba-step__text -->
+                </div>
+                <!-- /.ba-step -->
+              </div>
+              <!-- /.columns small-12 medium-6 large-3 -->
+              <div
+                class="columns small-12 medium-6 large-3 flex-container align-center medium-align-left"
+              >
+                <div class="ba-step" data-number="2">
+                  <p class="ba-step__text">ОБИРАЙ НАПРЯМОК</p>
+                  <!-- /.ba-step__text -->
+                </div>
+                <!-- /.ba-step -->
+              </div>
+              <!-- /.columns small-12 medium-6 large-3 -->
+              <div
+                class="columns small-12 medium-6 large-3 flex-container align-center medium-align-left"
+              >
+                <div class="ba-step" data-number="3">
+                  <p class="ba-step__text">ЗАМОВ КВИТОК</p>
+                  <!-- /.ba-step__text -->
+                </div>
+                <!-- /.ba-step -->
+              </div>
+              <!-- /.columns small-12 medium-6 large-3 -->
+              <div
+                class="columns small-12 medium-6 large-3 flex-container align-center medium-align-left"
+              >
+                <div class="ba-step" data-number="4">
+                  <p class="ba-step__text">ВИРУШАЙ У ПОДОРОЖ</p>
+                  <!-- /.ba-step__text -->
+                </div>
+                <!-- /.ba-step -->
+              </div>
+              <!-- /.columns small-12 medium-6 large-3 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.row -->
+        </section>
+        <!-- /.ba-section -->
+        <div class="ba-section ba-section--about text-center">
+          <div class="row column">
+            <h2 class="ba-section-title ba-section-title--about h1">
+              ЧОМУ ВАРТО ОБРАТИ НАС
+            </h2>
+            <!-- /.ba-section-title h1 -->
+            <div class="row">
+              <div
+                class="columns small-12 medium-3 flex-container align-center medium-align-left"
+              >
+                <div class="ba-about-box">
+                  <div
+                    class="ba-about-box__img flex-container align-middle align-center"
+                  >
+                    <img src="assets/img/simplicity.svg" alt="" />
+                  </div>
+                  <!-- /.ba-about-box__img -->
+                  <h3 class="ba-about-box__title">Простота</h3>
+                  <!-- /.ba-about-box__title -->
+                  <div class="ba-about-box__text">
+                    Віддтепер жодних зайвих дій - заходь, замовляй, вирушай
+                  </div>
+                  <!-- /.ba-about-box__text -->
+                </div>
+                <!-- /.ba-about-box -->
+              </div>
+              <!-- /.columns small-12 large-4 -->
+              <div class="columns small-12 medium-6 flex-container align-center">
+                <div class="ba-about-box ba-about-box--bordered">
+                  <div
+                    class="ba-about-box__img flex-container align-middle align-center"
+                  >
+                    <img src="assets/img/reliability.svg" alt="" />
+                  </div>
+                  <!-- /.ba-about-box__img -->
+                  <div class="ba-about-box__title">Надійність</div>
+                  <!-- /.ba-about-box__title -->
+                  <div class="ba-about-box__text">
+                    Замовляти квитки на сайті так само надійно, як і купувати іх у касі
+                  </div>
+                  <!-- /.ba-about-box__text -->
+                </div>
+                <!-- /.ba-about-box -->
+              </div>
+              <!-- /.columns small-12 large-4 -->
+              <div
+                class="columns small-12 medium-3 flex-container align-center medium-align-right"
+              >
+                <div class="ba-about-box">
+                  <div
+                    class="ba-about-box__img flex-container align-middle align-center"
+                  >
+                    <img src="assets/img/support.svg" alt="" />
+                  </div>
+                  <!-- /.ba-about-box__img -->
+                  <div class="ba-about-box__title">Підтримка</div>
+                  <!-- /.ba-about-box__title -->
+                  <div class="ba-about-box__text">
+                    Підтримка клієнтів у будь-який час, у зручному для вас форматі
+                  </div>
+                  <!-- /.ba-about-box__text -->
+                </div>
+                <!-- /.ba-about-box -->
+              </div>
+              <!-- /.columns small-12 large-4 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.row column -->
+        </div>
+        <!-- /.ba-section ba-section--about -->
+        <section class="ba-section">
+          <div class="row column">
+            <h2 class="ba-section-title h1 text-center">ПОПУЛЯРНІ НАПРЯМКИ</h2>
+            <div class="row">
+              <div class="columns small-12 medium-6">
+                <h3 class="text-center">По Укрaїні</h3>
+              </div>
+              <!-- /.columns small-12 medium-6 -->
+              <div class="columns small-12 medium-6">
+                <h3 class="text-center">За кордон</h3>
+              </div>
+              <!-- /.columns small-12 medium-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.row column -->
+        </section>
+        <!-- /.ba-section -->
+        <section class="ba-section ba-section--partners">
+          <div class="row align-middle">
+            <div class="colunm small-12 medium-4 text-center">
+              <img src="assets/img/busfor.png" alt="" />
+            </div>
+            <!-- /.colunm small-12 medium-4 -->
+            <div class="colunm small-12 medium-4 text-center">
+              <img src="assets/img/gunsel.png" alt="" />
+            </div>
+            <!-- /.colunm small-12 medium-4 -->
+            <div class="colunm small-12 medium-4 text-center">
+              <img src="assets/img/autolux.png" alt="" />
+            </div>
+            <!-- /.colunm small-12 medium-4 -->
+          </div>
+          <!-- /.row column -->
+        </section>
+        <!-- /.ba-section -->
+        <section class="ba-section ba-section--blog">
+          <div class="row ba-blog-slider">
+            <article class="column small-12 medium-6 ba-post">
+              <div class="row">
+                <div class="column small-12 medium-6">
+                  <div class="ba-post__img">
+                    <img src="assets/img/post1.jpg" alt="">
+                  </div>
+                  <!-- /.ba-post__img -->
+                </div>
+                <!-- /.column small-12 medium-6 -->
+                <div class="column small-12 medium-6">
+                  <div class="ba-post__text">
+                    <h3 class="ba-post__heading">10  простих лайфхаків</h3>
+                    <p>Як самотужки подорожувати по Європі</p>
+                    <a href="#" class="ba-more">читати  більше</a> <!-- /.ba-more -->
+                  </div>
+                  <!-- /.ba-post__text -->
+                </div>
+                <!-- /.column small-12 medium-6 -->
+              </div>
+            </article>
+            <article class="column small-12 medium-6 ba-post">
+              <div class="row">
+                <div class="column small-12 medium-6">
+                  <div class="ba-post__img">
+                    <img src="assets/img/post2.jpg" alt="">
+                  </div>
+                  <!-- /.ba-post__img -->
+                </div>
+                <!-- /.column small-12 medium-6 -->
+                <div class="column small-12 medium-6">
+                  <div class="ba-post__text">
+                    <h3 class="ba-post__heading">Як не стати жервою шахраїв</h3>
+                    <p>Та як уникнути неприємних ситуацій у подорожі</p>
+                    <a href="#" class="ba-more">читати  більше</a> <!-- /.ba-more -->
+                  </div>
+                  <!-- /.ba-post__text -->
+                </div>
+                <!-- /.column small-12 medium-6 -->
+              </div>
+            </article>
+            <article class="column small-12 medium-6 ba-post">
+              <div class="row">
+                <div class="column small-12 medium-6">
+                  <div class="ba-post__img">
+                    <img src="assets/img/post1.jpg" alt="">
+                  </div>
+                  <!-- /.ba-post__img -->
+                </div>
+                <!-- /.column small-12 medium-6 -->
+                <div class="column small-12 medium-6">
+                  <div class="ba-post__text">
+                    <h3 class="ba-post__heading">10  простих лайфхаків</h3>
+                    <p>Як самотужки подорожувати по Європі</p>
+                    <a href="#" class="ba-more">читати  більше</a> <!-- /.ba-more -->
+                  </div>
+                  <!-- /.ba-post__text -->
+                </div>
+                <!-- /.column small-12 medium-6 -->
+              </div>
+            </article>
+            <div class="ba-slider-arrows">
+              <button class="ba-slider-btn" data-prev>
+                <svg width="17" height="30" viewBox="0 0 17 30" fill="none">
+                  <path d="M0.254003 15.0782L14.5354 28.766C14.8717 29.0882 15.4112 29.0885 15.7478 28.7666C16.0844 28.4447 16.0847 27.9281 15.7484 27.6058L2.07607 14.5018L15.762 1.41206C16.0986 1.09013 16.0989 0.573549 15.7626 0.25127C15.5977 0.0931705 15.3755 0.00797215 15.1597 0.00786008C14.9439 0.00774801 14.7217 0.0866388 14.5566 0.250644L0.260948 13.9235C-0.0756405 14.2394 -0.07591 14.762 0.254003 15.0782Z" fill="#2C5A71"/>
+                  </svg>
+                  
+              </button>
+              <button class="ba-slider-btn" data-next>
+                <svg width="16" height="29" viewBox="0 0 16 29" fill="none">
+                  <path d="M15.7532 13.9219L1.46472 0.241578C1.12829 -0.080526 0.588743 -0.080526 0.252318 0.241578C-0.0841061 0.563682 -0.0841061 1.08026 0.252318 1.40237L13.9315 14.4992L0.252318 27.5961C-0.0841061 27.9182 -0.0841061 28.4348 0.252318 28.7569C0.417357 28.9149 0.639524 29 0.855343 29C1.07116 29 1.29333 28.921 1.45837 28.7569L15.7469 15.0766C16.0833 14.7606 16.0833 14.2379 15.7532 13.9219Z" fill="#2C5A71"/>
+                  </svg>
+                  
+              </button>
+            </div>
+            <!-- /.ba-slider-arrows -->
+          </div>
+          <!-- /.row -->
+        </section>
+        <!-- /.ba-section ba-section--blog -->
+        
+      </main>
+
+      <footer class="ba-footer">
+        <div class="row">
+          <div class="column show-for-medium medium-3 ">
+            <div class="ba-contacts">
+                <p><a href="tel:0952280000">095 228 0000</a></p>
+                <p><a href="tel:0962280000">096 228 0000</a></p>
+                <p>м. Полтава,</p>
+                <p>вул.Великотирнівська,7</p>
+            </div>
+          </div>
+          <!-- /.column small-12 medium-3 -->
+          <div class="column show-for-medium medium-3 ">
+              <ul class="menu vertical ba-footer-menu">
+                  <li><a href="#">Послуги</a></li>
+                  <li><a href="#">Автостанції</a></li>
+                  <li><a href="#">Питання і відповіді</a></li>
+              </ul>
+              <!-- /.menu vertical ba-footer-menu -->
+          </div>
+          <!-- /.column small-12 medium-3 -->
+          <div class="column show-for-medium medium-3 ">
+              <ul class="menu vertical ba-footer-menu">
+                  <li><a href="#">Про компанію</a></li>
+                  <li><a href="#">Користувачам</a></li>
+                  <li><a href="#">Перевізникам</a></li>
+              </ul>
+              <!-- /.menu vertical ba-footer-menu -->
+          </div>
+          <!-- /.column small-12 medium-3 -->
+          <div class="column small-12 medium-3">
+            <ul class="ba-social">
+              <li class="ba-social__item">
+                <a href="#" class="ba-social__link">
+                      <svg width="32" height="32" viewBox="0 0 32 32">
+                          <path d="M28 0H4C1.794 0 0 1.794 0 4V28C0 30.206 1.794 32 4 32H16V21H12V16H16V12C16 8.686 18.686 6 22 6H26V11H24C22.896 11 22 10.896 22 12V16H27L25 21H22V32H28C30.206 32 32 30.206 32 28V4C32 1.794 30.206 0 28 0Z"/>
+                          </svg>
+                </a>
+                <!-- /.ba-social__link -->
+              </li>
+              <!-- /.ba-social__item -->
+              <li class="ba-social__item">
+                <a href="#" class="ba-social__link">
+                      <svg width="32" height="32" viewBox="0 0 32 32">
+                          <path d="M16.0001 10.9126C13.1948 10.9126 10.9126 13.1948 10.9126 16.0001C10.9126 18.8053 13.1948 21.0876 16.0001 21.0876C18.8053 21.0876 21.0876 18.8053 21.0876 16.0001C21.0876 13.1948 18.8054 10.9126 16.0001 10.9126Z"/>
+                          <path d="M26.0417 0H5.95837C2.67294 0 0 2.67287 0 5.95831V26.0417C0 29.3271 2.67294 32 5.95837 32H26.0417C29.3271 32 32 29.3271 32 26.0417V5.95831C32 2.67287 29.3271 0 26.0417 0ZM16 22.9625C12.1608 22.9625 9.0375 19.8391 9.0375 16C9.0375 12.1609 12.1608 9.0375 16 9.0375C19.8392 9.0375 22.9625 12.1609 22.9625 16C22.9625 19.8391 19.8392 22.9625 16 22.9625ZM25.7002 7.62556C25.5259 7.79994 25.2846 7.89994 25.0377 7.89994C24.7908 7.89994 24.5489 7.79994 24.3746 7.62556C24.2002 7.45119 24.1002 7.20931 24.1002 6.96244C24.1002 6.71563 24.2002 6.47425 24.3746 6.29994C24.5489 6.12488 24.7908 6.02494 25.0377 6.02494C25.2839 6.02494 25.5259 6.12494 25.7002 6.29994C25.8752 6.47425 25.9752 6.71556 25.9752 6.96244C25.9752 7.20931 25.8752 7.45119 25.7002 7.62556Z"/>
+                          </svg>
+                          
+                </a>
+                <!-- /.ba-social__link -->
+              </li>
+              <!-- /.ba-social__item -->
+              <li class="ba-social__item">
+                <a href="#" class="ba-social__link">
+                      <svg width="32" height="32" viewBox="0 0 32 32">
+                          <path d="M26 0H5.99998C2.68597 0 0 2.68597 0 5.99998V26C0 29.314 2.68597 32 5.99998 32H26C29.314 32 32 29.314 32 26V5.99998C32.0001 2.68597 29.314 0 26 0ZM23.96 12.408L23.972 12.918C23.972 18.126 20.01 24.126 12.764 24.126C10.54 24.126 8.46996 23.4741 6.72598 22.356C7.03401 22.392 7.34797 22.412 7.666 22.412C9.51202 22.412 11.21 21.782 12.558 20.726C10.834 20.694 9.37998 19.554 8.87799 17.99C9.11997 18.034 9.36399 18.058 9.61998 18.058C9.97999 18.058 10.328 18.012 10.658 17.922C8.85595 17.558 7.49797 15.9681 7.49797 14.0601V14.0101C8.02995 14.3061 8.63595 14.482 9.28195 14.5041C8.22594 13.7981 7.52994 12.5921 7.52994 11.2261C7.52994 10.5041 7.72396 9.82808 8.06193 9.24609C10.0039 11.6301 12.9079 13.1981 16.1819 13.3621C16.1139 13.0741 16.08 12.7721 16.08 12.4641C16.08 10.2901 17.8439 8.52608 20.02 8.52608C21.152 8.52608 22.176 9.00405 22.8959 9.77005C23.792 9.59202 24.636 9.26405 25.398 8.81404C25.104 9.73406 24.48 10.5061 23.666 10.994C24.46 10.9 25.222 10.686 25.928 10.374C25.4 11.162 24.73 11.856 23.96 12.408Z"/>
+                          </svg>
+                          
+                </a>
+                <!-- /.ba-social__link -->
+              </li>
+              <!-- /.ba-social__item -->
+            </ul>
+            <!-- /.ba-social -->
+          </div>
+          <!-- /.column small-12 medium-3 -->
+          <div class="column small-12 hide-for-medium">
+            <div class="ba-contacts-small">
+              <a href="tel:0952280000">095 228 0000</a>
+                <a href="tel:0962280000">096 228 0000</a>
+            </div>
+            <!-- /.ba-contacts-small -->
+          </div>
+          <!-- /.column small-12 hide-for-medium -->
+        </div>
+        <!-- /.row -->
+      </footer>
+      <!-- /.ba-footer -->
+
+    </div>
+  </div>
+
+  <svg height="0" width="0" style="position: absolute;">
+      <defs>        
+            
+      </defs>
+  </svg>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

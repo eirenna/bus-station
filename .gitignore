@@ -7,4 +7,3 @@ bower_components
 .cache
 .idea
 yarn.lock
-dist
