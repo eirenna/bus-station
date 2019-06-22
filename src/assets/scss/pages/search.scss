@@ -1,172 +1,183 @@
 .ba-user-choise {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    font-size: 25px;
-    letter-spacing: 0.05em;
-    &__direction, &__date {
-        border-bottom: 1px solid #2C5A71;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  &__direction,
+  &__date {
+    border-bottom: 1px solid #2c5a71;
+  }
+  &__direction {
+    padding: 5px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: -8px;
+      width: 16px;
+      height: 16px;
+      background-color: $primary-color;
+      border-radius: 50%;
     }
-    &__direction {
-        padding: 5px;
-        position: relative;
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: -8px;
-            width: 16px;
-            height: 16px;
-            background-color: $primary-color;
-            border-radius: 50%;
-        }
-    }
+  }
 }
 
 .ba-sort {
-    margin-bottom: 37px;
+  margin-bottom: 37px;
 }
 
 .ba-search-results {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 //Card with result
 .ba-result-card {
-    background-color: $light-gray;
-    padding: 27px;
-    &__main {        
-        &--opened {
-            border-bottom: 1px solid rgba(44, 90, 113, 0.4);
-            padding-bottom: 30px;
-        }        
+  background-color: $light-gray;
+  padding: 27px;
+  &__main {
+    &--opened {
+      border-bottom: 1px solid rgba(44, 90, 113, 0.4);
+      padding-bottom: 30px;
     }
-    &__left {
-        padding-right: 30px;
-        border-right: 1px solid #2C5A71;
-    }
-    &__route-name {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 30px;
-    }
-    &__race-number {
-        margin-bottom: 70px;
-    }
+  }
+  &__left {
+    padding-right: 30px;
+    border-right: 1px solid #2c5a71;
+  }
+  &__route-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  &__race-number {
+    margin-bottom: 70px;
+  }
 
-    &__right {
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-    }
-    &__top {
-        margin-bottom: 50px;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__bottom {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__details {
-        padding-top: 30px;
-        display: none;
-    }
+  &__right {
+    //padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__top {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__details {
+    padding-top: 30px;
+    display: none;
+  }
+  .ba-date,
+  .ba-departure,
+  .ba-arrival {
+    flex-grow: 2;
+  }
 }
 
 .ba-result-card + .ba-result-card {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .ba-more-button {
-    display: inline-flex;
-    width: 110px;
-    color: $body-font-color;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    text-align: left;
-    background: transparent url(../img/down-arrow-hover.svg) 100% 50% no-repeat;
-    &--opened {
-        background-image: url(../img/top-arrow-hover.svg);
-    }
+  display: inline-flex;
+  width: 110px;
+  color: $body-font-color;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-align: left;
+  background: transparent url(../img/down-arrow-hover.svg) 100% 50% no-repeat;
+  &--opened {
+    background-image: url(../img/top-arrow-hover.svg);
+  }
 }
 
 .ba-bold {
-    font-weight: 700;
-    font-size: 18px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .ba-route {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 30px;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    height: 1px;
+    width: 75%;
+    background-color: #2c5a71;
+    z-index: 0;
+  }
+  &__point {
+    text-align: center;
+  }
+  &__round {
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: $primary-color;
     position: relative;
-    margin-bottom: 30px;
-    &:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 13%;
-        height: 1px;
-        width: 75%;
-        background-color: #2C5A71;
-        z-index: 0;
+    z-index: 1;
+    margin-bottom: 15px;
+    &--inactive {
+      background-color: #c4c4c4;
     }
-    &__point {
-        text-align: center;
-    }
-    &__round {
-        width: 16px;
-        height: 16px;
-        margin: 0 auto;
-        border-radius: 50%;
-        background-color: $primary-color;
-        position: relative;
-        z-index: 1;
-        margin-bottom: 15px;
-        &--inactive {
-            background-color: #C4C4C4;
-        }
-    }
-    &__time {
-        margin-bottom: 15px;
-    }
+  }
+  &__time {
+    margin-bottom: 15px;
+  }
 }
 
 .ba-duration {
+  flex-grow: 3;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    z-index: -1;
+    background-color: #2c5a71;
+    top: 50%;
+    left: 0;
+  }
+  &__top {
+    margin-bottom: 10px;
+  }
+  &__round {
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: $primary-color;
     position: relative;
-        z-index: 1;
-        &::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            z-index: -1;
-            background-color: #2C5A71;
-            top: 50%;
-            left: 0;
-        }
-    &__top {
-        margin-bottom: 10px;
-    }
-    &__round {
-        width: 16px;
-        height: 16px;
-        margin: 0 auto;
-        border-radius: 50%;
-        background-color: $primary-color;
-        position: relative;
-        z-index: 1;
-        margin-bottom: 10px;        
-    }
+    z-index: 1;
+    margin-bottom: 10px;
+  }
 }
 
 .ba-price {
-    margin-right: 15px;
-    font-weight: 700;
+  margin-right: 15px;
+  font-weight: 700;
 }
 
+.ba-seat-qty {
+    color: $primary-color;
+    margin-left: 10px;
+}
